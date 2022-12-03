@@ -1,8 +1,17 @@
 import React from "react";
 import styles from "../constants/style";
 import LetsConnect from "./LetsConnect";
+import personCoding from "../assets/typing-code.json";
+import { useLottie } from "lottie-react";
 
 const Hero = () => {
+  const lotteOptions = {
+    animationData: personCoding,
+    loop: true,
+  };
+
+  const { View } = useLottie(lotteOptions);
+
   return (
     <section
       id="home"
@@ -38,7 +47,10 @@ const Hero = () => {
       <div
         className={`flex-1 flex ${styles.flexCenter} md:my-0 my-10 relative`}
       >
-        <div className="relative z-index-[5] h-[90%] w-[85%]">GIFFFF</div>
+        <div className="relative z-index-[5] h-[90%] w-[85%] md:ml-12 md:-mt-28 ">
+          {" "}
+          {View}{" "}
+        </div>
         <div className="absolute z-[1] w-[50%] h-[50%] rounded-full bottom-40 white__gradient"></div>
       </div>
 

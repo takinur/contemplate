@@ -24,14 +24,14 @@ const Hero = () => {
         </div>
 
         <h1 className="font-poppins font-semibold ss:text-[68px] text-[52px] text-white ss:leading-[80px] leading-[80px] w-full">
-          <span className="bg-gradient-to-r from-green-500 to-violet-500 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-violet-500 to-green-500 bg-clip-text text-transparent">
             Takinur M
           </span>
         </h1>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-          Software Engineer and cloud infrastructure enthusiast. I love to build
-          things that live on the internet, from websites to applications to
-          anything in between.
+          Software Engineer, Web Developer, cloud Engineer and a passionate
+          learner with a strong interest in building scalable and efficient
+          software solutions.
         </p>
       </div>
 

@@ -1,16 +1,14 @@
 import styles, { layout } from "../constants/style";
-
-// lottie config
-// const defaultOptions = {
-//   loop: true,
-//   autoplay: true,
-//   animationData: animationData,
-//   rendererSettings: {
-//     preserveAspectRatio: "xMidYMid slice",
-//   },
-// };
+import { useLottie } from "lottie-react";
+import booksReading from "../assets/books-reading.json";
 
 const Education = () => {
+  const lotteOptions = {
+    animationData: booksReading,
+    loop: true,
+  };
+
+  const { View } = useLottie(lotteOptions);
   return (
     <section id="education">
       <h1 className="flex-1 font-poppins font-semibold ss:text-[55px] text-[45px] text-white ss:leading-[80px] leading-[80px]">
@@ -18,10 +16,7 @@ const Education = () => {
       </h1>
       <div className={layout.sectionReverse}>
         <div className={layout.sectionImgReverse}>
-          <div className="w-[80%] h-[80%] relative z-[5]">
-            {/* <Lottie options={defaultOptions} /> */}
-            another lottie
-          </div>
+          <div className="w-[80%] h-[80%] relative z-[5]">{View}</div>
 
           {/* gradient start */}
           <div className="absolute z-[3] -left-1/2 top-0 w-[50%] h-[50%] rounded-full white__gradient" />

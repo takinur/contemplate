@@ -39,10 +39,10 @@ const Content = ({ text, link }) => {
         - {text}{" "}
         {link ? (
           <a href={link} target="_blank">
-            <BsLink45Deg
+            {/* <BsLink45Deg
               size="1rem"
               className="inline hover:text-teal-200"
-            ></BsLink45Deg>
+            ></BsLink45Deg> */}
           </a>
         ) : (
           ""
@@ -68,6 +68,7 @@ const ExperienceCard = (props) => {
       <ol className="relative border-l border-gray-200 dark:border-gray-700 ml-6">
         {props.positions.map((position, index) => (
           <li
+            key={index}
             className={`${
               index === props.positions.length - 1 ? "mb-0" : "mb-4"
             } ml-4`}
@@ -80,7 +81,7 @@ const ExperienceCard = (props) => {
               {position.duration}
             </time>
             {position.content.map((info, index) => (
-              <Content index={index} {...info} />
+              <Content key={index} index={index} {...info} />
             ))}
             <p className="mb-4 text-base font-normal text-gray-500 dark:text-gray-400"></p>
           </li>

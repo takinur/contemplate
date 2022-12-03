@@ -24,3 +24,4 @@ export const navLinks = [
     title: "Contact Me",
   },
 ];
+

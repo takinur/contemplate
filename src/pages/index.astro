@@ -1,15 +1,28 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
 import Header from '../components/Header.jsx';
 import './index.css'
 import Hero from '../components/Hero';
+import styles from '../constants/style';
 ---
 
 <Layout title="Takinur M - Software Engineer">
-	<div class="bg-primary w-full overflow-hidden">
-		<Header client:load />
-		<Hero client:load />
+	<!-- Whole App Wrapper -->
+	<div class="bg-primary-gradient w-full overflow-hidden">
+		<div class="wrapper-header bg-primary-gradient ">
+			<div class={`${styles.paddingX} ${styles.flexCenter}`}>
+				<div class={`${styles.boxWidth}`}>
+					<Header client:load />
+				</div>
+			</div>
+	
+			<div class={` ${styles.flexStart}`}>
+				<div class={`${styles.boxWidth}`}>
+					<Hero client:load />
+				</div>
+			</div>
+		</div>
+	
 
 	</div>
 </Layout>

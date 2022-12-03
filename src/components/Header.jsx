@@ -7,7 +7,7 @@ const Header = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className="w-full bg-primary-gradient flex justify-between items-center navbar">
+    <nav className="w-full flex justify-between items-center navbar">
       {/* Logo */}
       <a href="#home">
         <img src="" alt="Takinur M" className="w-[80px] h-[80px]" />
@@ -23,7 +23,7 @@ const Header = () => {
               cursor-pointer
               text-[16px]
               ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}
-              text-white hover:text-teal-200`}
+              text-white hover:text-green-400`}
           >
             <a href={`#${nav.id}`}>{nav.title}</a>
           </li>

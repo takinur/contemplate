@@ -25,18 +25,6 @@ export const navLinks = [
   },
 ];
 
-export const educationList = [
-  {
-    id: "education-1",
-    icon: "",
-    title: "National Institute of Technology Karnataka, Surathkal",
-    degree: "Bachelor of Technology",
-    duration: "December 2020 - May 2024",
-    content1: "Major: Electronics and Communication Engineering",
-    content2: "Minor: Information Technology",
-  },
-];
-
 export const skills = [
   {
     title: "Programming Languages",

@@ -2,15 +2,16 @@ import React, { useState } from "react";
 import { navLinks } from "../constants";
 import menu from "../assets/menu.svg";
 import close from "../assets/close.svg";
+import Logo from "../assets/logo.png";
 
 const Header = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <nav className="w-full flex justify-between items-center navbar">
+    <nav className="w-full flex justify-between items-center navbar h-24">
       {/* Logo */}
       <a href="#home">
-        <img src="" alt="Takinur M" className="w-[80px] h-[80px]" />
+        <img src={Logo} alt="Takinur M" className="w-[48px] h-[48px]" />
       </a>
 
       {/* List of links */}

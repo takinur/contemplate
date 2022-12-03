@@ -1,3 +1,6 @@
+import BiovaasLogo from "../assets/biovaas-logo.png";
+import Logo from "../assets/logo.png";
+
 export const navLinks = [
   {
     id: "skills",
@@ -214,36 +217,50 @@ export const skills = [
 
 export const experiences = [
   {
-    organisation: "IRIS, NITK",
-    logo: "",
-    link: "https://iris.nitk.ac.in/about_us",
+    organisation: "Freelance Software Engineer ",
+    logo: Logo,
+    link: "#",
     positions: [
       {
-        title: "Web Manager",
-        duration: "Apr 2022 - Present",
+        title: "Full-Stack Web Developer",
+        duration: "From 2021 - Present",
         content: [
           {
-            text: "Managing a team of 6 student developers while also overlooking multiple modules.",
+            text: "Modified the existing codebase of a web application to add new features and improve the user experience.",
+            link: "",
+          },
+          {
+            text: "Implemented mobile-first design for the web application.",
+            link: "",
+          },
+          {
+            text: "Worked closely with the client to understand the requirements and deliver the project on time.",
+            link: "",
+          },
+          {
+            text: "Designed and created UI components that are reusable and scalable.",
+            link: "",
+          },
+          {
+            text: "Developed a REST API to handle the requests from the web application.",
             link: "",
           },
         ],
       },
       {
-        title: "Web Developer",
-        duration: "Nov 2021 - Apr 2022",
+        title: "Cloud Engineer ",
+        duration: "",
         content: [
           {
-            text: "Added Conditional Fields support to the Forms Module.",
+            text: "Developed a serverless application using AWS Lambda and AWS API Gateway to handle the requests from the web application.",
             link: "",
           },
-        ],
-      },
-      {
-        title: "Web Developer Intern",
-        duration: "Jun 2021 - Oct 2021",
-        content: [
           {
-            text: "Developed a multi-role approval flow system to facilitate data collection and display on the Institute's Department Websites.",
+            text: "Created a REST API using AWS API Gateway and AWS Lambda to handle the requests from the web application.",
+            link: "",
+          },
+          {
+            text: "Deployed diverse web application to several cloud platforms such as AWS, Azure, and Heroku.",
             link: "",
           },
         ],
@@ -251,20 +268,32 @@ export const experiences = [
     ],
   },
   {
-    organisation: "Career Development Centre, NITK",
-    logo: "",
-    link: "https://cdc.nitk.ac.in/",
+    organisation: "Biovaas Tech Aid",
+    logo: BiovaasLogo,
+    link: "https://www.biovaas.com/",
     positions: [
       {
-        title: "Lead Developer",
-        duration: "May 2022 - July 2022",
+        title: "Web Developer",
+        duration: "Jan 2020 - June 2021",
         content: [
           {
-            text: "Led a team of 3 developers and developed various parts of the official public website using Ruby on Rails.",
+            text: "Developed an E-commerce website for a selling technological products.",
             link: "",
           },
           {
-            text: "Setup an admin interface for dynamic content management by different stakeholders.",
+            text: "Optimized the website for better SEO and performance.",
+            link: "",
+          },
+          {
+            text: "Built and maintained the website using PHP, HTML, CSS, and JavaScript.",
+            link: "",
+          },
+          {
+            text: "Added new features as per business requirements as well as bug fixes.",
+            link: "",
+          },
+          {
+            text: "Worked with the team by filling reports, attending meetings, and giving presentations.",
             link: "",
           },
         ],

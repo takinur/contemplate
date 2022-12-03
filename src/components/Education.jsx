@@ -1,6 +1,7 @@
 import styles, { layout } from "../constants/style";
 import { useLottie } from "lottie-react";
 import booksReading from "../assets/books-reading.json";
+import UOG from "../assets/uog-logo.png";
 
 const Education = () => {
   const lotteOptions = {
@@ -27,12 +28,12 @@ const Education = () => {
         <div className={`${layout.sectionInfo} flex-col`}>
           <div className={`flex flex-row p-6 rounded-[20px] mb-6 feature-card`}>
             <div
-              className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-dimBlue`}
+              className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-zinc-100`}
             >
               <img
-                src="college"
-                alt="icon"
-                className="w-[80%] h-[80%] object-contain"
+                src={UOG}
+                alt="Greenwich Logo"
+                className="w-[90%] h-[90%] object-contain"
               />
             </div>
             <div className="flex-1 flex flex-col ml-4">

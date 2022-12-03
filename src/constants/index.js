@@ -11,17 +11,10 @@ export const navLinks = [
     id: "projects",
     title: "Projects",
   },
+
   {
-    id: "openSource",
-    title: "Open Source",
-  },
-  {
-    id: "extraCurricular",
-    title: "Extra Curricular",
-  },
-  {
-    id: "contactMe",
-    title: "Contact Me",
+    id: "contact",
+    title: "Contact",
   },
 ];
 
@@ -31,43 +24,39 @@ export const skills = [
     items: [
       {
         id: "pl-1",
-        icon: "",
-        name: "C++",
-      },
-      {
-        id: "pl-2",
-        icon: "",
+        icon: "python",
         name: "Python",
       },
       {
+        id: "pl-2",
+        icon: "javascript",
+        name: "JavaScript",
+      },
+      {
         id: "pl-3",
-        icon: "",
-        name: "Ruby",
+        icon: "typescript",
+        name: "TypeScript",
       },
       {
         id: "pl-4",
-        icon: "",
-        name: "C",
+        icon: "php",
+        name: "PHP",
       },
+
       {
         id: "pl-5",
-        icon: "",
+        icon: "html",
         name: "HTML",
       },
       {
         id: "pl-6",
-        icon: "",
+        icon: "css",
         name: "CSS",
       },
       {
         id: "pl-7",
-        icon: "",
-        name: "JavaScript",
-      },
-      {
-        id: "pl-8",
-        icon: "",
-        name: "Solidity",
+        icon: "sql",
+        name: "SQL",
       },
     ],
   },
@@ -76,18 +65,148 @@ export const skills = [
     items: [
       {
         id: "f-1",
-        icon: "",
+        icon: "django",
         name: "Django",
+      },
+      {
+        id: "f-2",
+        icon: "react",
+        name: "React",
+      },
+      {
+        id: "f-3",
+        icon: "node",
+        name: "Node",
+      },
+      {
+        id: "f-4",
+        icon: "next",
+        name: "Next",
+      },
+      {
+        id: "f-5",
+        icon: "express",
+        name: "Express",
+      },
+      {
+        id: "f-6",
+        icon: "tailwindcss",
+        name: "TailwindCSS",
+      },
+      {
+        id: "f-7",
+        icon: "vue",
+        name: "Vue",
+      },
+      {
+        id: "f-8",
+        icon: "bootstrap",
+        name: "Bootstrap",
+      },
+      {
+        id: "f-9",
+        icon: "jquery",
+        name: "jQuery",
+      },
+      {
+        id: "f-10",
+        icon: "laravel",
+        name: "Laravel",
+      },
+      {
+        id: "f-11",
+        icon: "fastapi",
+        name: "FastAPI",
+      },
+      {
+        id: "f-13",
+        icon: "tensorflow",
+        name: "TensorFlow",
       },
     ],
   },
   {
-    title: "Tools",
+    title: "Technologies",
     items: [
       {
         id: "t-1",
-        icon: "",
+        icon: "git",
+        name: "GIT",
+      },
+      {
+        id: "t-2",
+        icon: "docker",
+        name: "Docker",
+      },
+      {
+        id: "t-3",
+        icon: "aws",
+        name: "AWS",
+      },
+      {
+        id: "t-4",
+        icon: "linux",
+        name: "Linux",
+      },
+      {
+        id: "t-5",
+        icon: "figma",
+        name: "Figma",
+      },
+      {
+        id: "t-6",
+        icon: "restapi",
+        name: "REST API",
+      },
+      {
+        id: "t-7",
+        icon: "testing",
+        name: "Automatic Testing",
+      },
+      {
+        id: "t-8",
+        icon: "azure",
+        name: "Azure",
+      },
+      {
+        id: "t-9",
+        icon: "serverless",
+        name: "Serverless",
+      },
+    ],
+  },
+  {
+    title: "Databases",
+    items: [
+      {
+        id: "d-1",
+        icon: "postgresql",
+        name: "PostgreSql",
+      },
+      {
+        id: "d-2",
+        icon: "mysql",
         name: "MySQL",
+      },
+      {
+        id: "d-3",
+        icon: "oracle",
+        name: "Oracle",
+      },
+      {
+        id: "d-4",
+        icon: "mongodb",
+        name: "MongoDB",
+      },
+      {
+        id: "d-5",
+        icon: "sqlite",
+        name: "SQLite",
+      },
+      {
+        id: "d-6",
+        icon: "firebase",
+        name: "Firebase",
       },
     ],
   },

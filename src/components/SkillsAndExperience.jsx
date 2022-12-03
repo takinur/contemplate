@@ -1,13 +1,88 @@
 import React from "react";
 import { experiences, skills } from "../constants";
 import { layout } from "../constants/style";
+import {
+  SiDjango,
+  SiSqlite,
+  SiJavascript,
+  SiBootstrap,
+  SiReact,
+  SiTailwindcss,
+  SiPython,
+  SiMysql,
+  SiVite,
+  SiFirebase,
+  SiTypescript,
+  SiPhp,
+  SiHtml5,
+  SiCss3,
+  SiApachekafka,
+  SiNodedotjs,
+  SiNextdotjs,
+  SiExpress,
+  SiVuedotjs,
+  SiJquery,
+  SiLaravel,
+  SiFastapi,
+  SiTensorflow,
+  SiGithub,
+  SiDocker,
+  SiAmazonaws,
+  SiKalilinux,
+  SiFigma,
+  SiStrapi,
+  SiTestinglibrary,
+  SiMicrosoftazure,
+  SiAzurefunctions,
+  SiPostgresql,
+  SiOracle,
+  SiMongodb,
+} from "react-icons/si";
 
 export const SkillIcon = ({ icon, name }) => {
+  const createIcon =
+    {
+      python: <SiPython />,
+      javascript: <SiJavascript />,
+      typescript: <SiTypescript />,
+      php: <SiPhp />,
+      html: <SiHtml5 />,
+      css: <SiCss3 />,
+      sql: <SiApachekafka />,
+      django: <SiDjango />,
+      node: <SiNodedotjs />,
+      next: <SiNextdotjs />,
+      express: <SiExpress />,
+      vue: <SiVuedotjs />,
+      jquery: <SiJquery />,
+      laravel: <SiLaravel />,
+      fastapi: <SiFastapi />,
+      sqlite: <SiSqlite />,
+      bootstrap: <SiBootstrap />,
+      react: <SiReact />,
+      tensorflow: <SiTensorflow />,
+      tailwindcss: <SiTailwindcss />,
+      git: <SiGithub />,
+      mysql: <SiMysql />,
+      vite: <SiVite />,
+      firebase: <SiFirebase />,
+      docker: <SiDocker />,
+      aws: <SiAmazonaws />,
+      linux: <SiKalilinux />,
+      figma: <SiFigma />,
+      restapi: <SiStrapi />,
+      testing: <SiTestinglibrary />,
+      azure: <SiMicrosoftazure />,
+      serverless: <SiAzurefunctions />,
+      postgresql: <SiPostgresql />,
+      oracle: <SiOracle />,
+      mongodb: <SiMongodb />,
+    }[icon] || null;
+
   return (
     <div className="flex flex-col">
       <span className="text-white text-[30px] hover:text-teal-200">
-        {/* {React.createElement(icon)} */}
-        {icon}
+        {createIcon}
       </span>
       <p className="font-poppins text-dimWhite text-[12px] mt-2">{name}</p>
     </div>

@@ -4,8 +4,8 @@ import logo from "../assets/logo.png";
 const Footer = () => {
   return (
     <>
-      <section className="section-newsletter bg-white   pt-20 ">
-        <div className=" container-newsletter relative z-0  w-full border-t-2 border-slate-200 bg-slate-200 md:h-28 ">
+      <section id="contact" className="section-contact bg-primary pt-20 ">
+        <div className=" container-newsletter relative z-0  w-full border-t-2 border-green-400 bg-slate-800 md:h-28 ">
           <div className="mx-auto -mt-20 w-4/5 rounded-2xl bg-[#141c3a] px-6 py-10 pb-9 shadow-lg ">
             <div className=" mx-auto flex flex-col space-y-5 p-3 md:h-20 md:flex-row md:space-x-5 md:space-y-0">
               <div className="grid w-full place-items-center md:w-1/3">
@@ -22,9 +22,17 @@ const Footer = () => {
                   <a
                     href="https://twitter.com/_takinur"
                     target="blank"
-                    className="py-3 px-6 text-white rounded-full border-2 border-[#7510F7] shadow-lg block md:inline-block hover:bg-[#7510F7]"
+                    className="flex py-3 px-6 text-white rounded-full border-2 border-[#7510F7] shadow-lg md:inline-flex hover:bg-[#7510F7]"
                   >
-                    Let's do this
+                    Twitter{" "}
+                    <svg
+                      className="w-4 h-4 ml-2 mt-1 fill-current"
+                      role="img"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                    >
+                      <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                    </svg>
                   </a>
                 </div>
               </div>
@@ -32,7 +40,7 @@ const Footer = () => {
           </div>
         </div>
       </section>
-      <footer className="bg-gray-200 h-24">
+      <footer className="bg-gray-200 ">
         <div className="bg-gray-200">
           <div className="w-full mx-auto font-semibold text-gray-900 py-10 dark:bg-slate-800">
             <div className="text-center">
@@ -48,7 +56,7 @@ const Footer = () => {
                 <a
                   href="https://www.github.com/takinur"
                   target="blank"
-                  className="bg-slate-600 px-4 py-2 font-semibold text-white inline-flex items-center space-x-2 rounded"
+                  className="bg-slate-600 px-4 py-2 font-semibold text-white inline-flex items-center space-x-2 rounded hover:opacity-75"
                 >
                   <svg
                     fill="#000000"
@@ -65,7 +73,7 @@ const Footer = () => {
                 <a
                   href="https://linkedin.com/in/takinur"
                   target="blank"
-                  className="bg-[#0288d1] px-4 py-2 font-semibold text-white inline-flex items-center space-x-2 rounded"
+                  className="bg-[#0288d1] px-4 py-2 font-semibold text-white inline-flex items-center space-x-2 rounded hover:opacity-75"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -85,9 +93,31 @@ const Footer = () => {
                   <span>Linkedin</span>
                 </a>
                 <a
+                  href="mailto:takinurm@gmail.com"
+                  target="blank"
+                  className="bg-rose-600 px-4 py-2 font-semibold text-white inline-flex items-center space-x-2 rounded hover:opacity-75"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={1.5}
+                    stroke="currentColor"
+                    className="w-5 h-5"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"
+                    />
+                  </svg>
+
+                  <span>Email</span>
+                </a>
+                <a
                   href="https://twitter.com/_takinur"
                   target="blank"
-                  className="bg-blue-400 px-4 py-2 font-semibold text-white inline-flex items-center space-x-2 rounded"
+                  className="bg-teal-500 px-4 py-2 font-semibold text-white inline-flex items-center space-x-2 rounded hover:opacity-75"
                 >
                   <svg
                     className="w-5 h-5 fill-current"

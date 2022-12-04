@@ -6,8 +6,8 @@ import Hero from '../components/Hero';
 import styles from '../constants/style';
 import SkillsAndExperience from '../components/SkillsAndExperience';
 import Education from '../components/Education';
-import Projects from '../components/Projects';
 import Footer from '../components/Footer';
+import Projects from '../components/Projects';
 ---
 
 <Layout title="Takinur M - Software Engineer">
@@ -30,7 +30,8 @@ import Footer from '../components/Footer';
 				<div class={`${styles.boxWidth}`}>
 				  <SkillsAndExperience />
 				  <Education client:visible />
-				  <Projects />
+				  <Projects client:only />
+
 				
 				</div>
 			</div>

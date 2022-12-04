@@ -17,8 +17,8 @@ const Footer = () => {
                   I’ll buy the coffee. Get in touch by Tweet.
                 </p>
               </div>
-              <div class="w-full md:w-1/3 grid place-items-center">
-                <div class="md:space-x-20 space-y-10 md:space-y-0 mx-auto items-center">
+              <div className="w-full md:w-1/3 grid place-items-center">
+                <div className="md:space-x-20 space-y-10 md:space-y-0 mx-auto items-center">
                   <a
                     href="https://twitter.com/_takinur"
                     target="blank"

@@ -1,77 +1,89 @@
 import React from "react";
-import { projects } from "../constants";
+import "./Projects.css";
 
-const Project = (props) => {
-  return (
-    <div className="px-12 py-8 transition-colors duration-300 transform border rounded-xl hover:border-transparent group dark:border-gray-700 dark:hover:border-transparent feature-card">
-      <div className="flex flex-col sm:-mx-4 sm:flex-row">
-        <img
-          className="flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300"
-          src={props.image}
-          alt=""
-        />
-
-        <div className="mt-4 sm:mx-4 sm:mt-0">
-          <h1 className="text-xl font-semibold font-poppins text-gray-700 capitalize md:text-2xl group-hover:text-white text-gradient">
-            {props.title}
-          </h1>
-          <p className="font-poppins font-normal text-dimWhite mt-3">
-            Tech Stack
-          </p>
-          <p className="mt-2 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300">
-            <div className="flex sm:flex-row">
-              {props.stack.map((tech, index) => (
-                <div
-                  key={tech.id}
-                  index={index}
-                  className="text-dimWhite mr-5 text-[20px] hover:text-teal-200 tooltip"
-                >
-                  {tech.icon}
-                  <span className="tooltiptext">{tech.name}</span>
-                </div>
-              ))}
-            </div>
-          </p>
-        </div>
-      </div>
-      <p className="mt-8 text-gray-500 dark:text-gray-300 group-hover:text-gray-300 font-poppins">
-        {props.content}
-      </p>
-      <div className="flex mt-4 -mx-2">
-        {props.github ? (
-          <a href={props.github} target="_blank">
-            git
-          </a>
-        ) : (
-          ""
-        )}
-        {props.link ? (
-          <a href={props.link} target="_blank">
-            ICON
-          </a>
-        ) : (
-          ""
-        )}
-      </div>
-    </div>
-  );
-};
+const projects = [
+  {
+    id: 1,
+    title: "Blonkisoaz",
+    description: "Omuke trughte a otufta",
+    icon: "fas fa-walking",
+    image:
+      "https://66.media.tumblr.com/5af3f8303456e376ceda1517553ba786/tumblr_o4986gakjh1qho82wo1_1280.jpg",
+    stack: ["React", "Node", "Express", "MongoDB"],
+    link: "/blonkisonz",
+  },
+  {
+    id: 2,
+    title: "Oretemauw",
+    description: "Omuke trughte a otufta",
+    icon: "fas fa-snowflake",
+    image:
+      "https://66.media.tumblr.com/8b69cdde47aa952e4176b4200052abf4/tumblr_o51p7mFFF21qho82wo1_1280.jpg",
+    stack: ["React", "Node", "Express", "MongoDB"],
+    link: "/oretemauw",
+  },
+  {
+    id: 3,
+    title: "Iteresuselle",
+    description: "Omuke trughte a otufta",
+    icon: "fas fa-tree",
+    image:
+      "https://66.media.tumblr.com/f19901f50b79604839ca761cd6d74748/tumblr_o65rohhkQL1qho82wo1_1280.jpg",
+    stack: ["React", "Node", "Express", "MongoDB"],
+    link: "/iteresuselle",
+  },
+  {
+    id: 4,
+    title: "Oretemauw",
+    description: "Omuke trughte a otufta",
+    icon: "fas fa-snowflake",
+    image:
+      "https://66.media.tumblr.com/8b69cdde47aa952e4176b4200052abf4/tumblr_o51p7mFFF21qho82wo1_1280.jpg",
+    stack: ["React", "Node", "Express", "MongoDB"],
+    link: "/oretemauw",
+  },
+  {
+    id: 5,
+    title: "Iteresuselle",
+    description: "Omuke trughte a otufta",
+    icon: "fas fa-tree",
+    image:
+      "https://66.media.tumblr.com/f19901f50b79604839ca761cd6d74748/tumblr_o65rohhkQL1qho82wo1_1280.jpg",
+    stack: ["React", "Node", "Express", "MongoDB"],
+    link: "/iteresuselle",
+  },
+];
 
 const Projects = () => {
-  return (
-    <section id="projects">
-      <h1 className="flex-1 font-poppins font-semibold ss:text-[55px] text-[45px] text-white ss:leading-[80px] leading-[80px]">
-        Projects
-      </h1>
+  const [active, setActive] = React.useState(projects[0].id);
 
-      <div className="container px-2 py-10 mx-auto mb-8">
-        <div className="grid grid-cols-1 gap-8 mt-8 md:mt-16 md:grid-cols-2">
-          {projects.map((project, index) => (
-            <Project key={project.id} index={index} {...project} />
-          ))}
-        </div>
+  return (
+    <div className="h-screen">
+      <div className="options">
+        {projects.map((project) => (
+          <div
+            key={project.id}
+            className={active === project.id ? "option active" : "option"}
+            onClick={() => setActive(project.id)}
+            style={{
+              "--optionBackground":
+                "url(https://66.media.tumblr.com/5af3f8303456e376ceda1517553ba786/tumblr_o4986gakjh1qho82wo1_1280.jpg)",
+            }}
+          >
+            <div className="shadow"></div>
+            <div className="label">
+              <div className="icon">
+                <i className="fas fa-walking"></i>
+              </div>
+              <div className="info">
+                <div className="main">Blonkisoaz</div>
+                <div className="sub">Omuke trughte a otufta</div>
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
-    </section>
+    </div>
   );
 };
 

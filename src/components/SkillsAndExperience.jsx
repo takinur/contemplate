@@ -100,7 +100,7 @@ const SkillCard = (props) => {
       </div>
       <div className="grid grid-cols-3 gap-8 ml-8">
         {props.items.map((item, index) => (
-          <SkillIcon key={item.id} index={index} {...item} />
+          <SkillIcon key={index} index={index} {...item} />
         ))}
       </div>
     </div>

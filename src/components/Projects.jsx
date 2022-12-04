@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Projects.css";
 
 const projects = [
@@ -7,8 +7,7 @@ const projects = [
     title: "Blonkisoaz",
     description: "Omuke trughte a otufta",
     icon: "fas fa-walking",
-    image:
-      "https://66.media.tumblr.com/5af3f8303456e376ceda1517553ba786/tumblr_o4986gakjh1qho82wo1_1280.jpg",
+    thumbnail: `url("https://66.media.tumblr.com/5af3f8303456e376ceda1517553ba786/tumblr_o4986gakjh1qho82wo1_1280.jpg")`,
     stack: ["React", "Node", "Express", "MongoDB"],
     link: "/blonkisonz",
   },
@@ -17,8 +16,7 @@ const projects = [
     title: "Oretemauw",
     description: "Omuke trughte a otufta",
     icon: "fas fa-snowflake",
-    image:
-      "https://66.media.tumblr.com/8b69cdde47aa952e4176b4200052abf4/tumblr_o51p7mFFF21qho82wo1_1280.jpg",
+    thumbnail: `url("https://66.media.tumblr.com/8b69cdde47aa952e4176b4200052abf4/tumblr_o51p7mFFF21qho82wo1_1280.jpg")`,
     stack: ["React", "Node", "Express", "MongoDB"],
     link: "/oretemauw",
   },
@@ -55,20 +53,17 @@ const projects = [
 ];
 
 const Projects = () => {
-  const [active, setActive] = React.useState(projects[0].id);
+  const [active, setActive] = useState(projects[0].id);
 
   return (
-    <div className="h-screen">
+    <section id="projects" className="h-screen bg-red-400">
       <div className="options">
         {projects.map((project) => (
           <div
             key={project.id}
             className={active === project.id ? "option active" : "option"}
             onClick={() => setActive(project.id)}
-            style={{
-              "--optionBackground":
-                "url(https://66.media.tumblr.com/5af3f8303456e376ceda1517553ba786/tumblr_o4986gakjh1qho82wo1_1280.jpg)",
-            }}
+            style={{ "--optionBackground": project.thumbnail }}
           >
             <div className="shadow"></div>
             <div className="label">
@@ -83,7 +78,7 @@ const Projects = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

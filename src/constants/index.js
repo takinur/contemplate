@@ -230,6 +230,14 @@ export const experiences = [
             link: "",
           },
           {
+            text: "Developed a REST API to handle the requests from the web application.",
+            link: "",
+          },
+          {
+            text: "Worked on various well-known CMS as per client requirements including WordPress, Shopify, Opencart et cetra. ",
+            link: "",
+          },
+          {
             text: "Implemented mobile-first design for the web application.",
             link: "",
           },
@@ -239,10 +247,6 @@ export const experiences = [
           },
           {
             text: "Designed and created UI components that are reusable and scalable.",
-            link: "",
-          },
-          {
-            text: "Developed a REST API to handle the requests from the web application.",
             link: "",
           },
         ],
@@ -256,11 +260,11 @@ export const experiences = [
             link: "",
           },
           {
-            text: "Created a REST API using AWS API Gateway and AWS Lambda to handle the requests from the web application.",
+            text: "Configured servers and databases with modern infrastructure for hosting web applications using Nginx and Apache.",
             link: "",
           },
           {
-            text: "Deployed diverse web application to several cloud platforms such as AWS, Azure, and Heroku.",
+            text: "Deployed diverse web application to several cloud platforms such as AWS, Azure, and Digital Ocean.",
             link: "",
           },
         ],
@@ -277,7 +281,7 @@ export const experiences = [
         duration: "Jan 2020 - June 2021",
         content: [
           {
-            text: "Developed an E-commerce website for a selling technological products.",
+            text: "Developed an E-commerce website for selling technological products.",
             link: "",
           },
           {
@@ -289,7 +293,7 @@ export const experiences = [
             link: "",
           },
           {
-            text: "Added new features as per business requirements as well as bug fixes.",
+            text: "Added new features as per business requirements as well as maintenance and bug fixes were conducted.",
             link: "",
           },
           {

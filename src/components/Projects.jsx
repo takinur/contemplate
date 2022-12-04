@@ -27,7 +27,7 @@ const Project = (props) => {
                   className="text-dimWhite mr-5 text-[20px] hover:text-teal-200 tooltip"
                 >
                   {tech.icon}
-                  <span class="tooltiptext">{tech.name}</span>
+                  <span className="tooltiptext">{tech.name}</span>
                 </div>
               ))}
             </div>

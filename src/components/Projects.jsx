@@ -50,18 +50,65 @@ const projects = [
     stack: ["React", "Node", "Express", "MongoDB"],
     link: "/iteresuselle",
   },
+  {
+    id: 6,
+    title: "Oretemauw",
+    description: "Omuke trughte a otufta",
+    icon: "fas fa-snowflake",
+    thumbnail: `url("https://66.media.tumblr.com/8b69cdde47aa952e4176b4200052abf4/tumblr_o51p7mFFF21qho82wo1_1280.jpg")`,
+    stack: ["React", "Node", "Express", "MongoDB"],
+    link: "/oretemauw",
+  },
+  {
+    id: 7,
+    title: "Iteresuselle",
+    description: "Omuke trughte a otufta",
+    icon: "fas fa-tree",
+    thumbnail: `url("https://66.media.tumblr.com/f19901f50b79604839ca761cd6d74748/tumblr_o65rohhkQL1qho82wo1_1280.jpg")`,
+    stack: ["React", "Node", "Express", "MongoDB"],
+    link: "/iteresuselle",
+  },
+  {
+    id: 8,
+    title: "Oretemauw",
+    description: "Omuke trughte a otufta",
+    icon: "fas fa-snowflake",
+    thumbnail: `url("https://66.media.tumblr.com/8b69cdde47aa952e4176b4200052abf4/tumblr_o51p7mFFF21qho82wo1_1280.jpg")`,
+    stack: ["React", "Node", "Express", "MongoDB"],
+    link: "/oretemauw",
+  },
+  {
+    id: 9,
+    title: "Iteresuselle",
+    description: "Omuke trughte a otufta",
+    icon: "fas fa-tree",
+    thumbnail: `url("https://66.media.tumblr.com/f19901f50b79604839ca761cd6d74748/tumblr_o65rohhkQL1qho82wo1_1280.jpg")`,
+    stack: ["React", "Node", "Express", "MongoDB"],
+    link: "/iteresuselle",
+  },
+  {
+    id: 10,
+    title: "Oretemauw",
+    description: "Omuke trughte a otufta",
+    icon: "fas fa-snowflake",
+    thumbnail: `url("https://66.media.tumblr.com/8b69cdde47aa952e4176b4200052abf4/tumblr_o51p7mFFF21qho82wo1_1280.jpg")`,
+    stack: ["React", "Node", "Express", "MongoDB"],
+    link: "/oretemauw",
+  },
 ];
 
 const Projects = () => {
   const [active, setActive] = useState(projects[0].id);
 
   return (
-    <section id="projects" className="h-screen bg-red-400">
-      <div className="options">
+    <section id="projects" className="h-full w-full pb-20  ">
+      <div className="options h-full md:h-auto max-w-7xl overflow-hidden w-full items-stretch  md:flex-row md:flex grid grid-flow-cols">
         {projects.map((project) => (
           <div
             key={project.id}
-            className={active === project.id ? "option active" : "option"}
+            className={`option h-52 md:h-[400px]  ${
+              active === project.id ? "active" : ""
+            }`}
             onClick={() => setActive(project.id)}
             style={{ "--optionBackground": project.thumbnail }}
           >

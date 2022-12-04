@@ -47,8 +47,8 @@ const Education = () => {
                 Started in 2019 and graduated in 2022
               </p>
               <p className="font-poppins font-normal text-dimWhite text-[16px] leading-[30px] mb-1">
-                - Relevent Courseworks: Web Development, Operating Systems,
-                Computer Networks, Database Systems, Software Project
+                - Relevent Courseworks: Dynamic Web Development, Operating
+                Systems, Computer Networks, Database Systems, Software Project
                 Management, Software development Technique, Software Design and
                 Development, Computing Project with AI and Machine Learning
               </p>

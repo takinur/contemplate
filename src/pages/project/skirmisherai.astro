@@ -5,6 +5,7 @@ import Logo from "../../assets/logo.png";
 import skirmisherLanding from "../../assets/skirmihser-landing-page.png";
 import termsPage from "../../assets/skirmisher-terms.png";
 import ScreenSnippet from "../../components/ScreenSnippet";
+import dashboard from "../../assets/skirmisher-dashboard.png";
 ---
 
 <Layout title="Talent Screening Project - Takinur Portfolio">
@@ -90,30 +91,8 @@ import ScreenSnippet from "../../components/ScreenSnippet";
           </h2>
           <hr class="w-11/12 mt-1 border-t-2 border-zinc-200 ml-4" />
           <ScreenSnippet source={skirmisherLanding} name={"Landing Page"} />
-          <h4
-            class="text-zinc-200 font-bold text-2xl mt-4 text-center uppercase"
-          >
-            Landing Page
-          </h4>
-          <div class="flex justify-center">
-            <img
-              class="w-11/12 mt-2"
-              src={skirmisherLanding}
-              alt="Skimisher Landing Page"
-            />
-          </div>
-          <h4
-            class="text-zinc-200 font-bold text-2xl mt-4 text-center uppercase"
-          >
-            Terms and Conditions
-          </h4>
-          <div class="flex justify-center">
-            <img
-              class="w-11/12 mt-2"
-              src={termsPage}
-              alt="Skimisher Landing Page"
-            />
-          </div>
+          <ScreenSnippet source={dashboard} name={"Dashboard"} />
+          <ScreenSnippet source={termsPage} name={" Terms and Conditions"} />
 
           <hr class="w-full mt-4 border-t-2 border-zinc ml-4" />
           <div class="next-project-wrapper w-full flex justify-between">

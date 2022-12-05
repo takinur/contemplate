@@ -2,7 +2,10 @@
 import Layout from "../../layouts/Layout.astro";
 import "../index.css";
 import Logo from "../../assets/logo.png";
-import skirmisherLanding from "../../assets/skirmihser-landing-page.png";
+import artHero from "../../assets/art-painting.webp";
+import artContact from "../../assets/art-contact.webp";
+import ScreenSnippet from "../../components/ScreenSnippet";
+import artCollection from "../../assets/art-collection.png";
 ---
 
 <Layout title="Art Selling Project - Takinur Portfolio">
@@ -20,7 +23,7 @@ import skirmisherLanding from "../../assets/skirmihser-landing-page.png";
         <div class="hero-image-wrapper">
           <img
             class="object-cover mt-12 md:absolute md:-top-24 rounded-3xl"
-            src={skirmisherLanding}
+            src={artHero}
             alt=""
           />
         </div>
@@ -28,7 +31,7 @@ import skirmisherLanding from "../../assets/skirmihser-landing-page.png";
           <h1
             class="md:text-5xl font-roboto ml-3 text-2xl font-bold uppercase bg-gradient-to-r from-violet-500 to-green-500 bg-clip-text text-transparent"
           >
-            SkirmisherAI
+            Original Paintings
           </h1>
           <hr class="w-11/12 mt-1 border-t-2 border-zinc ml-4" />
           <div class="md:grid grid-cols-3 mt-4 w-full">
@@ -40,9 +43,7 @@ import skirmisherLanding from "../../assets/skirmihser-landing-page.png";
                   <h6>Title</h6>
                 </div>
                 <div class="text-base text-zinc-100 font-poppins">
-                  <p>
-                    AI Powered Talent Screening Progressive Web Application.
-                  </p>
+                  <p>Website for showcasing and selling Arts.</p>
                 </div>
               </div>
               <div class="content-wrapper mt-4 grid grid-cols-2">
@@ -53,8 +54,8 @@ import skirmisherLanding from "../../assets/skirmihser-landing-page.png";
                 </div>
                 <div class="text-base text-zinc-100 font-poppins">
                   <p>
-                    Python, React, Django, JavaScript, Tensorflow, TailwindCSS,
-                    PostgreSQL
+                    PHP, JavaScript, jQuery, HTML, CSS, Bootstrap, WordPress,
+                    MySQL, Stripe
                   </p>
                 </div>
               </div>
@@ -64,18 +65,16 @@ import skirmisherLanding from "../../assets/skirmihser-landing-page.png";
                 >
                   <h6>Year</h6>
                 </div>
-                <div class="text-base text-zinc-100 font-poppins">2022</div>
+                <div class="text-base text-zinc-100 font-poppins">2021</div>
               </div>
             </div>
             <div
               class="wrapper-description mt-8 md:mt-0 px-0 text-zinc-100 md:px-4"
             >
               <p class="text-justify">
-                SkirmisherAI is a progressive web application that uses AI to
-                screen candidates for a job. The application is built using the
-                cutting edge technologies and has extensive features like live
-                interview, report generation & export, automatic sourcing and
-                many more.
+                Developed and deployed a website where customers can view and
+                purchase arts from diverse collection. Integrated a custom art
+                ordering system attached with Stripe and Paypal Payment Methods.
               </p>
             </div>
           </div>
@@ -84,21 +83,12 @@ import skirmisherLanding from "../../assets/skirmihser-landing-page.png";
           <h2
             class="md:text-5xl font-roboto ml-3 text-2xl font-bold uppercase bg-gradient-to-r from-green-500 via-teal-500 to-violet-500 bg-clip-text text-transparent"
           >
-            Screen Shots of the Project
+            Screen Snippets of the Work
           </h2>
           <hr class="w-11/12 mt-1 border-t-2 border-zinc-200 ml-4" />
-          <h4
-            class="text-zinc-200 font-bold text-2xl mt-4 text-center uppercase"
-          >
-            Landing Page
-          </h4>
-          <div class="flex justify-center">
-            <img
-              class="w-11/12 mt-2"
-              src={skirmisherLanding}
-              alt="Skimisher Landing Page"
-            />
-          </div>
+          <ScreenSnippet source={"/images/art_site.gif"} name="Main Screen" />
+          <ScreenSnippet source={artCollection} name="Collection Page" />
+          <ScreenSnippet source={artContact} name="Contact Page" />
 
           <hr class="w-full mt-4 border-t-2 border-zinc ml-4" />
           <div class="next-project-wrapper w-full flex justify-between">

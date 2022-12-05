@@ -323,7 +323,7 @@ export const projects = [
       "Tailwind",
       "PostgreSQL",
     ],
-    link: "/skirmisherai",
+    link: "project/skirmisherai",
   },
   {
     id: 70,
@@ -334,7 +334,7 @@ export const projects = [
     icon: "art",
     thumbnail: `url("/images/art_site.gif")`,
     stack: ["PHP", "WordPress", "jQuery", "JavaScript", "Mysql", "Bootstrap"],
-    link: "/original-art",
+    link: "project/original-art",
   },
   {
     id: 71,
@@ -345,7 +345,7 @@ export const projects = [
     icon: "portfolio",
     thumbnail: `url("/images/portfolio-header.png")`,
     stack: ["Astro", "React", "JavaScript", "TailwindCSS", "HTML", "CSS"],
-    link: "/portfolio-site",
+    link: "project/portfolio-site",
   },
   {
     id: 72,
@@ -356,7 +356,7 @@ export const projects = [
     icon: "ski",
     thumbnail: `url("/images/ski-beyond.png")`,
     stack: ["Figma", "HTML", "CSS"],
-    link: "/ski-beyond",
+    link: "project/ski-beyond",
   },
   {
     id: 73,
@@ -367,7 +367,7 @@ export const projects = [
     icon: "courier",
     thumbnail: `url("/images/express-courier.webp")`,
     stack: ["PHP", "Laravel", "Vue", "JavaScript", "Mysql", "TailwindCSS"],
-    link: "/express-courier",
+    link: "project/express-courier",
   },
   {
     id: 74,
@@ -378,7 +378,7 @@ export const projects = [
     icon: "driverless",
     thumbnail: `url("/images/driverless-thumb.webp")`,
     stack: ["PHP", "JavaScript", "TailwindCSS", "HTML", "CSS"],
-    link: "/driverless",
+    link: "project/driverless",
   },
   {
     id: 75,
@@ -389,7 +389,7 @@ export const projects = [
     icon: "zero-two",
     thumbnail: `url("/images/zero-two.gif")`,
     stack: ["PHP", "Laravel", "Vue", "JavaScript", "Mysql", "TailwindCSS"],
-    link: "/zero-two",
+    link: "project/zero-two",
   },
   {
     id: 76,
@@ -400,7 +400,7 @@ export const projects = [
     icon: "realestate",
     thumbnail: `url("/images/Real-Estate.gif")`,
     stack: ["Python", "Django", "React", "JavaScript", "Mysql", "Bootstrap"],
-    link: "/buying-home-in-california",
+    link: "project/buying-home-in-california",
   },
   {
     id: 77,
@@ -411,7 +411,7 @@ export const projects = [
     icon: "wembley",
     thumbnail: `url("/images/wembley-thumb-min.png")`,
     stack: ["SharePoint", "React", "JavaScript", "HTML", "CSS"],
-    link: "/wembley-stadium",
+    link: "project/wembley-stadium",
   },
   {
     id: 78,
@@ -422,7 +422,7 @@ export const projects = [
     icon: "ecommerce",
     thumbnail: `url("/images/ecommerce.gif")`,
     stack: ["Python", "Django", "React", "JavaScript", "Mysql", "TailwindCSS"],
-    link: "/e-commerce",
+    link: "project/e-commerce",
   },
   {
     id: 79,
@@ -433,6 +433,6 @@ export const projects = [
     icon: "serverless",
     thumbnail: `url("/images/serverless.png")`,
     stack: ["Azure", "React", "JavaScript", "HTML", "CSS"],
-    link: "/derestify",
+    link: "project/derestify",
   },
 ];

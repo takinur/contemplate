@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Projects.css";
 import { projects } from "../constants";
+import { motion } from "framer-motion";
 
 import {
   SiBmcsoftware,
@@ -121,7 +122,12 @@ const Projects = () => {
   const [active, setActive] = useState(projects[0].id);
 
   return (
-    <section id="projects" className="h-full w-full pb-20  ">
+    <motion.section
+      whileInView={{ x: [100, 0], opacity: [0, 1] }}
+      transition={{ duration: 1 }}
+      id="projects"
+      className="h-full w-full pb-20  "
+    >
       <h1 className="mb-4 flex-1 font-poppins font-semibold ss:text-[55px] text-[45px] text-white ss:leading-[80px] leading-[80px]">
         Recent Works
       </h1>
@@ -174,7 +180,7 @@ const Projects = () => {
           </div>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 };
 

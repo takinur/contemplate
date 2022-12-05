@@ -1,5 +1,7 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import ScreenSnippet from "../../components/ScreenSnippet";
+
 import "../index.css";
 import Logo from "../../assets/logo.png";
 import skirmisherLanding from "../../assets/skirmihser-landing-page.png";
@@ -79,20 +81,52 @@ import skiheader from "../../assets/ski-figma.png";
           <h2
             class="md:text-5xl font-roboto ml-3 text-2xl font-bold uppercase bg-gradient-to-r from-green-500 via-teal-500 to-violet-500 bg-clip-text text-transparent"
           >
-            Screen Shots of the Project
+            ScreenShots of the Project
           </h2>
           <hr class="w-11/12 mt-1 border-t-2 border-zinc-200 ml-4" />
-          <h4
-            class="text-zinc-200 font-bold text-2xl mt-4 text-center uppercase"
-          >
-            Landing Page
-          </h4>
-          <div class="flex justify-center">
-            <img
-              class="w-11/12 mt-2"
-              src={skirmisherLanding}
-              alt="Skimisher Landing Page"
-            />
+          <div class="flex flex-col items-center content-center justify-center">
+            <div class="w-96">
+              <ScreenSnippet
+                source={"/images/ski-beyond.png"}
+                name={"Welcome Screen"}
+              />
+            </div>
+            <div class="w-96">
+              <ScreenSnippet
+                source={"/images/ski-beyond.png"}
+                name={"Welcome Screen"}
+              />
+            </div>
+            <div class="w-96">
+              <ScreenSnippet
+                source={"/images/ski-acc.png"}
+                name={"User Account Screen"}
+              />
+            </div>
+            <div class="w-96">
+              <ScreenSnippet
+                source={"/images/ski-log.png"}
+                name={"Activity Screen"}
+              />
+            </div>
+            <div class="w-96">
+              <ScreenSnippet
+                source={"/images/ski-friends.png"}
+                name={"Friends Screen"}
+              />
+            </div>
+            <div class="w-96">
+              <ScreenSnippet
+                source={"/images/ski-record.png"}
+                name={"Record Screen"}
+              />
+            </div>
+            <div class="w-96">
+              <ScreenSnippet
+                source={"/images/ski-resorts.png"}
+                name={"Resorts Screen"}
+              />
+            </div>
           </div>
 
           <hr class="w-full mt-4 border-t-2 border-zinc ml-4" />

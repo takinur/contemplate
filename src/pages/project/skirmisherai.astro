@@ -2,22 +2,25 @@
 import Layout from "../../layouts/Layout.astro";
 import "../index.css";
 import Logo from "../../assets/logo.png";
+import skirmisherLanding from "../../assets/skirmihser-landing-page.png";
 ---
 
 <Layout title="Takinur M - Software Engineer">
   <!-- Whole Page Wrapper -->
   <div class="w-full bg-[#2b2b33] h-screen overflow-x-hidden">
     <div class="grid grid-cols-5">
-      <div class="flex justify-center pt-20">
-        <a href="/" class="animate-pulse">
-          <img src={Logo} class="w-10 md:w-20" alt="Logo of Takinur" />
-        </a>
+      <div class="wrapper-main">
+        <div class="wrapper-icon fixed flex justify-center">
+          <a href="/" class="mt-20 ml-4 md:ml-20 animate-bounce">
+            <img src={Logo} class="w-10 md:w-20" alt="Logo of Takinur" />
+          </a>
+        </div>
       </div>
       <div class="col-span-3">
         <div class="hero-image-wrapper">
           <img
             class="object-cover mt-12 md:absolute md:-top-24 rounded-3xl"
-            src="https://itssharl.ee/_next/image?url=https%3A%2F%2Fmedia.graphassets.com%2FHHugGSL1RwqNpqQeR86r&w=1920&q=75"
+            src={skirmisherLanding}
             alt=""
           />
         </div>
@@ -67,35 +70,58 @@ import Logo from "../../assets/logo.png";
             <div
               class="wrapper-description mt-8 md:mt-0 px-0 text-zinc-100 md:px-4"
             >
-              <p class="" >
+              <p class="text-justify">
                 SkirmisherAI is a progressive web application that uses AI to
-                screen candidates for a job. It is a project that I am working
-                on with a team of 4 people. I am responsible for the frontend
-                development of the project. I am using React, TailwindCSS, and
-                Django for the frontend development. I am also using Tensorflow
-                for the AI part of the project.
+                screen candidates for a job. The application is built using the
+                cutting edge technologies and has extensive features like live
+                interview, report generation & export, automatic sourcing and
+                many more.
               </p>
             </div>
           </div>
         </div>
-      </div>
-      <div class="flex justify-center pt-20">
-        <a href="/" class="">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="1.5"
-            stroke="currentColor"
-            class="md:w-16 w-8 h-8 md:h-16 text-gray-400 hover:opacity-80 cursor-pointer"
+        <div class="snippets mt-8">
+          <h2
+            class="md:text-5xl font-roboto ml-3 text-2xl font-bold uppercase bg-gradient-to-r from-green-500 via-teal-500 to-violet-500 bg-clip-text text-transparent"
           >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
-            ></path>
-          </svg>
-        </a>
+            Screen Shots of the Project
+          </h2>
+          <hr class="w-11/12 mt-1 ml-4" />
+          <h4
+            class="text-zinc-200 font-bold text-2xl mt-4 text-center uppercase"
+          >
+            Landing Page
+          </h4>
+          <div class="flex justify-center">
+            <img
+              class="w-11/12 mt-2"
+              src={skirmisherLanding}
+              alt="Skimisher Landing Page"
+            />
+          </div>
+
+          <div class="h-20">SCROLLABLE Loren</div>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="wrapper-icon fixed flex justify-center">
+          <a href="/" class="mt-20 ml-4 md:ml-20">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="md:w-16 w-8 h-8 md:h-16 text-gray-200 hover:opacity-80 cursor-pointer"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+              ></path>
+            </svg>
+          </a>
+        </div>
       </div>
     </div>
   </div>

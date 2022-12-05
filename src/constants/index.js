@@ -320,7 +320,7 @@ export const projects = [
       "React",
       "JavaScript",
       "Tensorflow",
-      "Tailwind",
+      "TailwindCSS",
       "PostgreSQL",
     ],
     link: "project/skirmisherai",
@@ -344,7 +344,7 @@ export const projects = [
       "Developed a modern, SEO friendly and responsive portfolio website to showcase my competences and projects.",
     icon: "portfolio",
     thumbnail: `url("/images/portfolio-header.png")`,
-    stack: ["Astro", "React", "JavaScript", "TailwindCSS", "HTML", "CSS"],
+    stack: ["Astro", "React", "TypeScript", "TailwindCSS", "HTML", "CSS"],
     link: "project/portfolio-site",
   },
   {

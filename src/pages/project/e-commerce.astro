@@ -3,6 +3,7 @@ import Layout from "../../layouts/Layout.astro";
 import "../index.css";
 import Logo from "../../assets/logo.png";
 import skirmisherLanding from "../../assets/skirmihser-landing-page.png";
+import ScreenSnippet from "../../components/ScreenSnippet";
 ---
 
 <Layout title="E-commerce Project - Takinur Portfolio">
@@ -20,7 +21,7 @@ import skirmisherLanding from "../../assets/skirmihser-landing-page.png";
         <div class="hero-image-wrapper">
           <img
             class="object-cover mt-12 md:absolute md:-top-24 rounded-3xl"
-            src={skirmisherLanding}
+            src={"/images/courier-home.webp"}
             alt=""
           />
         </div>
@@ -132,26 +133,26 @@ import skirmisherLanding from "../../assets/skirmihser-landing-page.png";
           </div>
           <div class="h-24 invisible">Designed and Developed by Takinur M</div>
         </div>
+      </div>
+      <div class="right-side relative">
+        <div class="wrapper-icon fixed flex justify-center">
+          <a href="/" class="mt-20 ml-4 md:ml-20">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="md:w-16 w-8 h-8 md:h-16 text-gray-200 hover:opacity-80 cursor-pointer"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+              ></path>
+            </svg>
+          </a>
         </div>
-        <div class="right-side relative">
-          <div class="wrapper-icon fixed flex justify-center">
-            <a href="/" class="mt-20 ml-4 md:ml-20">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="md:w-16 w-8 h-8 md:h-16 text-gray-200 hover:opacity-80 cursor-pointer"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
-                ></path>
-              </svg>
-            </a>
-          </div>
       </div>
     </div>
   </div>

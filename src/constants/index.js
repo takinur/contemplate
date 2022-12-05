@@ -328,18 +328,23 @@ export const projects = [
     id: 70,
     title: "Original Paintings",
     tagline: "Website for showcasing and selling Arts .",
-    description: "Talent Screening Platform With AI Powered Resume Screening",
-    icon: "skirmisher",
+    description:
+      "Developed and deployed a website where customers can view and purchase arts from any corner of world. Integrated a custom art ordering system attached with woocommerce",
+    icon: "art",
     thumbnail: `url("/images/art_site.gif")`,
-    stack: [
-      "Python",
-      "Django",
-      "React",
-      "JavaScript",
-      "Tensorflow",
-      "Tailwind",
-    ],
-    link: "/skirmisherai",
+    stack: ["PHP", "WordPress", "jQuery", "JavaScript", "Mysql", "Bootstrap"],
+    link: "/original-art",
+  },
+  {
+    id: 71,
+    title: "Portfolio Site ",
+    tagline: "My Personal Portfolio Website.",
+    description:
+      "Developed a modern, SEO friendly and responsive portfolio website to showcase my competences and projects.",
+    icon: "portfolio",
+    thumbnail: `url("/images/portfolio-header.png")`,
+    stack: ["React", "JavaScript", "Tailwind", "HTML", "CSS"],
+    link: "/portfolio-site",
   },
 
   {

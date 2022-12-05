@@ -1,17 +1,16 @@
 import React, { useState } from "react";
 import "./Projects.css";
 
-import { SiBmcsoftware, SiCurl } from "react-icons/si";
+import { SiBmcsoftware, SiCurl, SiDynamics365 } from "react-icons/si";
 
 import { projects } from "../constants";
 
 export const ProjectIcon = ({ icon }) => {
-  console.log(icon);
   switch (icon) {
     case "skirmisher":
       return <SiBmcsoftware />;
-    case "fas fa-tree":
-      return <SiBmcsoftware />;
+    case "art":
+      return <SiDynamics365 />;
     default:
       return <SiCurl />;
   }

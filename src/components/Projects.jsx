@@ -1,9 +1,47 @@
 import React, { useState } from "react";
 import "./Projects.css";
-
-import { SiBmcsoftware, SiCurl, SiDynamics365 } from "react-icons/si";
-
 import { projects } from "../constants";
+
+import {
+  SiBmcsoftware,
+  SiCurl,
+  SiDynamics365,
+  SiDjango,
+  SiSqlite,
+  SiJavascript,
+  SiBootstrap,
+  SiReact,
+  SiTailwindcss,
+  SiPython,
+  SiMysql,
+  SiVite,
+  SiFirebase,
+  SiTypescript,
+  SiPhp,
+  SiHtml5,
+  SiCss3,
+  SiApachekafka,
+  SiNodedotjs,
+  SiNextdotjs,
+  SiExpress,
+  SiVuedotjs,
+  SiJquery,
+  SiLaravel,
+  SiFastapi,
+  SiTensorflow,
+  SiGithub,
+  SiDocker,
+  SiAmazonaws,
+  SiKalilinux,
+  SiFigma,
+  SiStrapi,
+  SiTestinglibrary,
+  SiMicrosoftazure,
+  SiAzurefunctions,
+  SiPostgresql,
+  SiOracle,
+  SiMongodb,
+} from "react-icons/si";
 
 export const ProjectIcon = ({ icon }) => {
   switch (icon) {
@@ -14,6 +52,56 @@ export const ProjectIcon = ({ icon }) => {
     default:
       return <SiCurl />;
   }
+};
+
+export const StackIcon = ({ icon }) => {
+  const name = icon;
+  console.log("icon", icon + "name", name);
+  const createIcon =
+    {
+      python: <SiPython />,
+      javascript: <SiJavascript />,
+      typescript: <SiTypescript />,
+      php: <SiPhp />,
+      html: <SiHtml5 />,
+      css: <SiCss3 />,
+      sql: <SiApachekafka />,
+      django: <SiDjango />,
+      node: <SiNodedotjs />,
+      next: <SiNextdotjs />,
+      express: <SiExpress />,
+      vue: <SiVuedotjs />,
+      jquery: <SiJquery />,
+      laravel: <SiLaravel />,
+      fastapi: <SiFastapi />,
+      sqlite: <SiSqlite />,
+      bootstrap: <SiBootstrap />,
+      react: <SiReact />,
+      tensorflow: <SiTensorflow />,
+      tailwindcss: <SiTailwindcss />,
+      git: <SiGithub />,
+      mysql: <SiMysql />,
+      vite: <SiVite />,
+      firebase: <SiFirebase />,
+      docker: <SiDocker />,
+      aws: <SiAmazonaws />,
+      linux: <SiKalilinux />,
+      figma: <SiFigma />,
+      restapi: <SiStrapi />,
+      testing: <SiTestinglibrary />,
+      azure: <SiMicrosoftazure />,
+      serverless: <SiAzurefunctions />,
+      postgresql: <SiPostgresql />,
+      oracle: <SiOracle />,
+      mongodb: <SiMongodb />,
+    }[icon.toLowerCase()] || null;
+
+  return (
+    <div className="text-dimWhite  relative text-[20px] hover:text-teal-200 tooltip">
+      {createIcon}
+      <span className="tooltiptext  z-20 ">{icon}</span>
+    </div>
+  );
 };
 
 const Projects = () => {
@@ -52,14 +140,22 @@ const Projects = () => {
                 </svg>
               </a>
             </div>
+
             <div className="shadow"></div>
             <div className="label">
               <div className="icon z-20">
                 <ProjectIcon icon={project.icon} />
               </div>
               <div className="info">
-                <div className="main">{project.title}</div>
-                <div className="sub">{project.tagline}</div>
+                <div className="main">{project.title} </div>
+                <div className="my-1 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300">
+                  <div className="flex flex-row gap-4">
+                    {project.stack.map((tech, index) => (
+                      <StackIcon key={index} icon={tech} />
+                    ))}
+                  </div>
+                </div>
+                <div className="sub mb-5">{project.tagline}</div>
               </div>
             </div>
           </div>

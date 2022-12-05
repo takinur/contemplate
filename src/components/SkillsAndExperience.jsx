@@ -38,6 +38,7 @@ import {
   SiOracle,
   SiMongodb,
 } from "react-icons/si";
+import { useInView } from "react-intersection-observer";
 
 export const SkillIcon = ({ icon, name }) => {
   const createIcon =

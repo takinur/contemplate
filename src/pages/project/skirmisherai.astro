@@ -1,0 +1,66 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "../index.css";
+import Logo from "../../assets/logo.png";
+---
+
+<Layout title="Takinur M - Software Engineer">
+  <!-- Whole Page Wrapper -->
+  <div class="w-full bg-[#2b2b33] h-screen overflow-x-hidden">
+    <div class="grid grid-cols-5">
+      <div class="flex justify-center pt-20">
+        <a href="/" class="animate-pulse">
+          <img src={Logo} class="w-10 md:w-20" alt="Logo of Takinur" />
+        </a>
+      </div>
+      <div class="col-span-3">
+        <div class="hero-image-wrapper">
+          <img
+            class="object-cover top-12 absolute md:-top-24 rounded-3xl"
+            src="/images/skirmisher-thumb.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="flex justify-center pt-20">
+        <a href="/">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="md:w-16 w-8 h-8 md:h-16 text-gray-400 hover:opacity-80 cursor-pointer"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+            ></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .hero-image-wrapper {
+    font-family: studiofeixen-variable, studiofeixen, Arial, Helvetica,
+      sans-serif;
+    letter-spacing: -0.015em;
+    -webkit-font-smoothing: antialiased;
+    font-variation-settings: "wght" 500, "wdth" 100;
+    font-weight: unset;
+    font-size: 1em;
+    pointer-events: auto;
+    --accentColor: #46509c;
+    --accentColorDark: #77d0ce;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: calc(var(--innerVh, 1vh) * 75);
+    position: relative;
+  }
+</style>

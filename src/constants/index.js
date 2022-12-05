@@ -357,17 +357,18 @@ export const projects = [
     stack: ["Figma", "HTML", "CSS"],
     link: "/ski-beyond",
   },
-
   {
-    id: 3,
-    title: "Iteresuselle",
-    description: "Omuke trughte a otufta",
-    icon: "fas fa-tree",
-    image:
-      "https://66.media.tumblr.com/f19901f50b79604839ca761cd6d74748/tumblr_o65rohhkQL1qho82wo1_1280.jpg",
-    stack: ["React", "Node", "Express", "MongoDB"],
-    link: "/iteresuselle",
+    id: 73,
+    title: "Express Courier",
+    tagline: "SPA E-Courier Application with RestAPI.",
+    description:
+      "Developed a web application for a courier company to manage their orders and payments.",
+    icon: "courier",
+    thumbnail: `url("/images/express-courier.webp")`,
+    stack: ["PHP", "Laravel", "Vue", "JavaScript", "Mysql", "TailwindCSS"],
+    link: "/express-courier",
   },
+
   {
     id: 4,
     title: "Oretemauw",

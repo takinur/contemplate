@@ -321,6 +321,7 @@ export const projects = [
       "JavaScript",
       "Tensorflow",
       "Tailwind",
+      "PostgreSQL",
     ],
     link: "/skirmisherai",
   },
@@ -396,9 +397,42 @@ export const projects = [
     tagline: "Real Estate Website with Python and MLS API.",
     description:
       "Developed a real estate website where users can search for homes in California.",
-    icon: "realstate",
+    icon: "realestate",
     thumbnail: `url("/images/Real-Estate.gif")`,
     stack: ["Python", "Django", "React", "JavaScript", "Mysql", "Bootstrap"],
     link: "/buying-home-in-california",
+  },
+  {
+    id: 77,
+    title: "Wembley Stadium",
+    tagline: "Football Stadium & Music Venue Website .",
+    description:
+      "Utilizing SharePoint CMS, developed a website with all the required funcionality for a football stadium and music venue. These was done cloning existing website and adding new features.",
+    icon: "wembley",
+    thumbnail: `url("/images/wembley-thumb-min.png")`,
+    stack: ["SharePoint", "React", "JavaScript", "HTML", "CSS"],
+    link: "/wembley-stadium",
+  },
+  {
+    id: 78,
+    title: "E-Commerce",
+    tagline: "E-Commerce Website Django Framework.",
+    description:
+      "Developed an E-commerce website for selling sustainable products.",
+    icon: "ecommerce",
+    thumbnail: `url("/images/ecommerce.gif")`,
+    stack: ["Python", "Django", "React", "JavaScript", "Mysql", "TailwindCSS"],
+    link: "/e-commerce",
+  },
+  {
+    id: 79,
+    title: "Derestify",
+    tagline: "Serverless Web Application with Azure .",
+    description:
+      "Developed a serverless web application for a startup company that is working on a new technology.",
+    icon: "serverless",
+    thumbnail: `url("/images/azure-dashboard.png")`,
+    stack: ["Azure", "React", "JavaScript", "HTML", "CSS"],
+    link: "/derestify",
   },
 ];

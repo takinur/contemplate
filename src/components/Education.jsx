@@ -2,6 +2,7 @@ import styles, { layout } from "../constants/style";
 import { useLottie } from "lottie-react";
 import booksReading from "../assets/books-reading.json";
 import UOG from "../assets/uog-logo.png";
+import { motion } from "framer-motion";
 
 const Education = () => {
   const lotteOptions = {
@@ -15,7 +16,11 @@ const Education = () => {
       <h1 className="flex-1 font-poppins font-semibold ss:text-[55px] text-[45px] text-white ss:leading-[80px] leading-[80px]">
         Education
       </h1>
-      <div className={layout.sectionReverse}>
+      <motion.div
+        className={layout.sectionReverse}
+        whileInView={{ x: [-100, 0], opacity: [0, 1] }}
+        transition={{ duration: 1 }}
+      >
         <div className={layout.sectionImgReverse}>
           <div className="w-[80%] h-[80%] relative z-[5]">{View}</div>
 
@@ -55,7 +60,7 @@ const Education = () => {
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

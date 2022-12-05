@@ -26,6 +26,23 @@
 .options .option:nth-child(6) {
   --defaultBackground: #ac92ec;
 }
+
+.options .option:nth-child(7) {
+  --defaultBackground: #964ed1;
+}
+.options .option:nth-child(8) {
+  --defaultBackground: #18c5b6;
+}
+.options .option:nth-child(9) {
+  --defaultBackground: #16a72c;
+}
+.options .option:nth-child(10) {
+  --defaultBackground: #fc6e51;
+}
+.options .option:nth-child(11) {
+  --defaultBackground: #ffce54;
+}
+
 .options .option.active {
   flex-grow: 10000;
   transform: scale(1);

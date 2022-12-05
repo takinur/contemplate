@@ -43,6 +43,9 @@ import {
   SiMongodb,
   SiArchlinux,
   SiWordpress,
+  SiEmlakjet,
+  SiGitter,
+  SiHomeassistantcommunitystore,
 } from "react-icons/si";
 
 export const ProjectIcon = ({ icon }) => {
@@ -51,6 +54,14 @@ export const ProjectIcon = ({ icon }) => {
       return <SiBmcsoftware />;
     case "art":
       return <SiDynamics365 />;
+    case "serverless":
+      return <SiAzurefunctions />;
+    case "realestate":
+      return <SiEmlakjet />;
+    case "wembley":
+      return <SiGitter />;
+    case "ecommerce":
+      return <SiHomeassistantcommunitystore />;
     default:
       return <SiCurl />;
   }

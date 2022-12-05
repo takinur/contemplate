@@ -1,49 +1,40 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.jsx';
-import './index.css'
-import Hero from '../components/Hero';
-import styles from '../constants/style';
-import SkillsAndExperience from '../components/SkillsAndExperience';
-import Education from '../components/Education';
-import Footer from '../components/Footer';
-import Projects from '../components/Projects';
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.jsx";
+import "./index.css";
+import Hero from "../components/Hero";
+import styles from "../constants/style";
+import SkillsAndExperience from "../components/SkillsAndExperience";
+import Education from "../components/Education";
+import Footer from "../components/Footer";
+import Projects from "../components/Projects";
 ---
 
 <Layout title="Takinur M - Software Engineer">
-	<!-- Whole App Wrapper -->
-	<div class="bg-primary w-full overflow-hidden">
-		<div class="wrapper-header bg-primary ">
-			<div class={`${styles.paddingX} ${styles.flexCenter}`}>
-				<div class={`${styles.boxWidth}`}>
-					<Header client:load />
-				</div>
-			</div>
-	
-			<div class={` ${styles.flexStart}`}>
-				<div class={`${styles.boxWidth}`}>
-					<Hero client:load />
-				</div>
-			</div>
+  <!-- Whole App Wrapper -->
+  <div class="bg-primary w-full overflow-hidden">
+    <div class="wrapper-header bg-primary">
+      <div class={`${styles.paddingX} ${styles.flexCenter}`}>
+        <div class={`${styles.boxWidth}`}>
+          <Header client:load />
+        </div>
+      </div>
 
-			<div class={`bg-primary ${styles.flexCenter} ${styles.paddingX} `}>
-				<div class={`${styles.boxWidth}`}>
-				  <SkillsAndExperience />
-				  <Education client:visible />
+      <div class={` ${styles.flexStart}`}>
+        <div class={`${styles.boxWidth}`}>
+          <Hero client:load />
+        </div>
+      </div>
 
-				  <Projects client:visible />
-				
-				</div>
-			</div>
-			<Footer />
+      <div class={`bg-primary ${styles.flexCenter} ${styles.paddingX} `}>
+        <div class={`${styles.boxWidth}`}>
+          <SkillsAndExperience />
+          <Education client:visible />
 
-		</div>
-	
-
-	</div>
+          <Projects client:visible />
+        </div>
+      </div>
+      <Footer />
+    </div>
+  </div>
 </Layout>
-
-<style>
-
-	
-</style>

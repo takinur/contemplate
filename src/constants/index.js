@@ -427,11 +427,11 @@ export const projects = [
   {
     id: 79,
     title: "Derestify",
-    tagline: "Serverless Web Application with Azure .",
+    tagline: "Serverless Web Application with RestAPI .",
     description:
       "Developed a serverless web application for a startup company that is working on a new technology.",
     icon: "serverless",
-    thumbnail: `url("/images/azure-dashboard.png")`,
+    thumbnail: `url("/images/serverless.png")`,
     stack: ["Azure", "React", "JavaScript", "HTML", "CSS"],
     link: "/derestify",
   },

@@ -343,19 +343,21 @@ export const projects = [
       "Developed a modern, SEO friendly and responsive portfolio website to showcase my competences and projects.",
     icon: "portfolio",
     thumbnail: `url("/images/portfolio-header.png")`,
-    stack: ["React", "JavaScript", "Tailwind", "HTML", "CSS"],
+    stack: ["Astro", "React", "JavaScript", "TailwindCSS", "HTML", "CSS"],
     link: "/portfolio-site",
   },
-
   {
-    id: 2,
-    title: "Oretemauw",
-    description: "Omuke trughte a otufta",
-    icon: "fas fa-snowflake",
-    thumbnail: `url("https://66.media.tumblr.com/8b69cdde47aa952e4176b4200052abf4/tumblr_o51p7mFFF21qho82wo1_1280.jpg")`,
-    stack: ["React", "Node", "Express", "MongoDB"],
-    link: "/oretemauw",
+    id: 72,
+    title: "Ski Beyond ",
+    tagline: "Skiing App prototype for iPhone.",
+    description:
+      "Developed a high-fidelity prototype for a skiing app for iPhone.",
+    icon: "ski",
+    thumbnail: `url("/images/ski-beyond.png")`,
+    stack: ["Figma", "HTML", "CSS"],
+    link: "/ski-beyond",
   },
+
   {
     id: 3,
     title: "Iteresuselle",

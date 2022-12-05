@@ -41,6 +41,8 @@ import {
   SiPostgresql,
   SiOracle,
   SiMongodb,
+  SiArchlinux,
+  SiWordpress,
 } from "react-icons/si";
 
 export const ProjectIcon = ({ icon }) => {
@@ -55,8 +57,6 @@ export const ProjectIcon = ({ icon }) => {
 };
 
 export const StackIcon = ({ icon }) => {
-  const name = icon;
-  console.log("icon", icon + "name", name);
   const createIcon =
     {
       python: <SiPython />,
@@ -94,6 +94,8 @@ export const StackIcon = ({ icon }) => {
       postgresql: <SiPostgresql />,
       oracle: <SiOracle />,
       mongodb: <SiMongodb />,
+      astro: <SiArchlinux />,
+      wordpress: <SiWordpress />,
     }[icon.toLowerCase()] || null;
 
   return (
@@ -122,7 +124,7 @@ const Projects = () => {
             onClick={() => setActive(project.id)}
             style={{ "--optionBackground": project.thumbnail }}
           >
-            <div className="absolute right-3 bottom-4 z-10">
+            <div className="absolute right-2 bottom-3 z-10">
               <a href={project.link} target="_blank" rel="noreferrer">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

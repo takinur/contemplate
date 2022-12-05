@@ -1,0 +1,184 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import "../index.css";
+import Logo from "../../assets/logo.png";
+import skirmisherLanding from "../../assets/skirmihser-landing-page.png";
+---
+
+<Layout title="E-commerce Project - Takinur Portfolio">
+  <!-- Whole Page Wrapper -->
+  <div class="w-full bg-[#2b2b33] h-screen overflow-x-hidden">
+    <div class="grid grid-cols-5">
+      <div class="left-side">
+        <div class="wrapper-icon fixed flex justify-center">
+          <a href="/" class="mt-20 ml-4 md:ml-20 animate-bounce">
+            <img src={Logo} class="w-10 md:w-20" alt="Logo of Takinur" />
+          </a>
+        </div>
+      </div>
+      <div class="col-span-3 main-container">
+        <div class="hero-image-wrapper">
+          <img
+            class="object-cover mt-12 md:absolute md:-top-24 rounded-3xl"
+            src={skirmisherLanding}
+            alt=""
+          />
+        </div>
+        <div class="project-description mt-8 md:mt-8">
+          <h1
+            class="md:text-5xl font-roboto ml-3 text-2xl font-bold uppercase bg-gradient-to-r from-violet-500 to-green-500 bg-clip-text text-transparent"
+          >
+            SkirmisherAI
+          </h1>
+          <hr class="w-11/12 mt-1 border-t-2 border-zinc ml-4" />
+          <div class="md:grid grid-cols-3 mt-4 w-full">
+            <div class="main-wrapper col-span-2">
+              <div class="content-wrapper grid grid-cols-2">
+                <div
+                  class="categories uppercase text-xl font-bold text-[#77d0ce]"
+                >
+                  <h6>Title</h6>
+                </div>
+                <div class="text-base text-zinc-100 font-poppins">
+                  <p>
+                    AI Powered Talent Screening Progressive Web Application.
+                  </p>
+                </div>
+              </div>
+              <div class="content-wrapper mt-4 grid grid-cols-2">
+                <div
+                  class="categories uppercase text-xl font-bold text-[#77d0ce]"
+                >
+                  <h6>Tech Stack</h6>
+                </div>
+                <div class="text-base text-zinc-100 font-poppins">
+                  <p>
+                    Python, React, Django, JavaScript, Tensorflow, TailwindCSS,
+                    PostgreSQL
+                  </p>
+                </div>
+              </div>
+              <div class="content-wrapper mt-2 grid grid-cols-2">
+                <div
+                  class="categories uppercase text-xl font-bold text-[#77d0ce]"
+                >
+                  <h6>Year</h6>
+                </div>
+                <div class="text-base text-zinc-100 font-poppins">2022</div>
+              </div>
+            </div>
+            <div
+              class="wrapper-description mt-8 md:mt-0 px-0 text-zinc-100 md:px-4"
+            >
+              <p class="text-justify">
+                SkirmisherAI is a progressive web application that uses AI to
+                screen candidates for a job. The application is built using the
+                cutting edge technologies and has extensive features like live
+                interview, report generation & export, automatic sourcing and
+                many more.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="snippets mt-8">
+          <h2
+            class="md:text-5xl font-roboto ml-3 text-2xl font-bold uppercase bg-gradient-to-r from-green-500 via-teal-500 to-violet-500 bg-clip-text text-transparent"
+          >
+            Screen Shots of the Project
+          </h2>
+          <hr class="w-11/12 mt-1 border-t-2 border-zinc-200 ml-4" />
+          <h4
+            class="text-zinc-200 font-bold text-2xl mt-4 text-center uppercase"
+          >
+            Landing Page
+          </h4>
+          <div class="flex justify-center">
+            <img
+              class="w-11/12 mt-2"
+              src={skirmisherLanding}
+              alt="Skimisher Landing Page"
+            />
+          </div>
+
+          <hr class="w-full mt-4 border-t-2 border-zinc ml-4" />
+          <div class="next-project-wrapper w-full flex justify-between">
+            <a
+              href="/project/derestify"
+              class="group mt-4 font-poppins inline-flex hover:text-teal-400 items-center font-bold text-xl px-4 py-1.5 text-white transition"
+            >
+              next project
+              <svg
+                class="mt-0.5 ml-2 -mr-1 stroke-white stroke-2"
+                fill="none"
+                width="14"
+                height="14"
+                viewBox="0 0 10 10"
+                aria-hidden="true"
+              >
+                <path
+                  class="opacity-0 transition group-hover:opacity-100"
+                  d="M0 5h7"></path>
+                <path
+                  class="transition group-hover:translate-x-[4px]"
+                  d="M1 1l4 4-4 4"></path>
+              </svg>
+            </a>
+
+            <div
+              class="flex uppercase text-zinc-200 font-semiBold text-xl mt-5 text-center"
+            >
+              Derestify
+            </div>
+          </div>
+          <div class="h-24 invisible">Designed and Developed by Takinur M</div>
+        </div>
+        <div class="right-side relative">
+          <div class="wrapper-icon fixed flex justify-center">
+            <a href="/" class="mt-20 ml-4 md:ml-20">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="md:w-16 w-8 h-8 md:h-16 text-gray-200 hover:opacity-80 cursor-pointer"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .hero-image-wrapper {
+      font-family: studiofeixen-variable, studiofeixen, Arial, Helvetica,
+        sans-serif;
+      letter-spacing: -0.015em;
+      -webkit-font-smoothing: antialiased;
+      font-variation-settings: "wght" 500, "wdth" 100;
+      font-weight: unset;
+      font-size: 1em;
+      pointer-events: auto;
+      --accentColor: #46509c;
+      --accentColorDark: #77d0ce;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      width: 100%;
+      height: calc(var(--innerVh, 1vh) * 75);
+      position: relative;
+    }
+    @media (max-width: 768px) {
+      .hero-image-wrapper {
+        height: auto;
+      }
+    }
+  </style>
+</Layout>

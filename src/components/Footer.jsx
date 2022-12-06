@@ -133,7 +133,15 @@ const Footer = () => {
             </div>
             <div className="mt-12 md:justify-center items-center text-center text-sm text-gray-400">
               <p className="mt-8 md:mt-0">
-                HandCrafted by Me &copy;{new Date().getFullYear()}
+                HandCrafted by Me &copy;{new Date().getFullYear()}, Deployed to
+                AWS by
+                <a
+                  href="https://vercel.com/?utm_source=takinur-potfolio"
+                  target="blank"
+                  className="text-teal-400 ml-1 hover:text-teal-500"
+                >
+                  Vercel.
+                </a>
               </p>
             </div>
           </div>

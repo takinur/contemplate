@@ -453,6 +453,10 @@ export const projects = [
     thumbnail: `url("/images/wembley-thumb-min.png")`,
     stack: ["SharePoint", "React", "JavaScript", "HTML", "CSS"],
     link: "project/wembley-stadium",
+    image: "/images/wembley-thumb-min.png",
+    nextProjectUrl: "/project/e-commerce",
+    nextProjectTitle: "E-Commerce",
+    year: "2022",
   },
   {
     id: 78,

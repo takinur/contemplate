@@ -400,14 +400,18 @@ export const projects = [
   },
   {
     id: 74,
-    title: "Driverless",
+    title: "Driverless car Website",
     tagline: "Autonomous Vehicle Company Website.",
     description:
-      "Developed a website for a startup company that is working on autonomous vehicles.",
+      "An autonomous vehicle company has approached to me to develop a dynamic website where they can showcase their technology and sell products. Therefore, I have developed a website with all the required functionality for the proposed company.",
     icon: "driverless",
     thumbnail: `url("/images/driverless-thumb.webp")`,
-    stack: ["PHP", "JavaScript", "Bootstrap", "HTML", "CSS"],
+    stack: ["PHP", "JavaScript", "Python", "MySQL", "Bootstrap", "HTML", "CSS"],
     link: "project/driverless",
+    image: "/images/driverless-thumb.webp",
+    nextProjectUrl: "/project/zero-two",
+    nextProjectTitle: "Zero Two",
+    year: "2020",
   },
   {
     id: 75,
@@ -429,11 +433,15 @@ export const projects = [
     title: "Buying Home In California",
     tagline: "Real Estate Website with Python and MLS API.",
     description:
-      "Developed a real estate website where users can search for homes in California.",
+      "Developed a real estate website where users can search for homes in California. The website is integrated with MLS API to fetch the latest data from the database.",
     icon: "realestate",
     thumbnail: `url("/images/Real-Estate.gif")`,
     stack: ["Python", "Django", "React", "JavaScript", "Mysql", "Bootstrap"],
     link: "project/buying-home-in-california",
+    image: "/images/real-estate-home.webp",
+    nextProjectUrl: "/project/wembley-stadium",
+    nextProjectTitle: "Wembley Stadium",
+    year: "2021",
   },
   {
     id: 77,

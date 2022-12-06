@@ -363,7 +363,7 @@ export const projects = [
       "CSS",
     ],
     link: "project/portfolio-site",
-    image: "/portfolio-thumb.png",
+    image: "/images/portfolio-thumb.png",
     nextProjectUrl: "/project/ski-beyond",
     nextProjectTitle: "Ski Beyond",
     year: "2022",

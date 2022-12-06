@@ -1,8 +1,9 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import ScreenSnippet from "../../components/ScreenSnippet";
+
 import "../index.css";
 import Logo from "../../assets/logo.png";
-import skirmisherLanding from "../../assets/skirmihser-landing-page.png";
 ---
 
 <Layout title="Autonomous Vehicel Website - Takinur Portfolio ">
@@ -20,7 +21,7 @@ import skirmisherLanding from "../../assets/skirmihser-landing-page.png";
         <div class="hero-image-wrapper">
           <img
             class="object-cover mt-12 md:absolute md:-top-24 rounded-3xl"
-            src={skirmisherLanding}
+            src={"/images/driverless-thumb.webp"}
             alt=""
           />
         </div>
@@ -28,7 +29,7 @@ import skirmisherLanding from "../../assets/skirmihser-landing-page.png";
           <h1
             class="md:text-5xl font-roboto ml-3 text-2xl font-bold uppercase bg-gradient-to-r from-violet-500 to-green-500 bg-clip-text text-transparent"
           >
-            SkirmisherAI
+            Driverless Car Website
           </h1>
           <hr class="w-11/12 mt-1 border-t-2 border-zinc ml-4" />
           <div class="md:grid grid-cols-3 mt-4 w-full">
@@ -41,7 +42,8 @@ import skirmisherLanding from "../../assets/skirmihser-landing-page.png";
                 </div>
                 <div class="text-base text-zinc-100 font-poppins">
                   <p>
-                    AI Powered Talent Screening Progressive Web Application.
+                    Autonomous Vehicle Website for a company that sells
+                    driverless cars and other products.
                   </p>
                 </div>
               </div>
@@ -52,10 +54,7 @@ import skirmisherLanding from "../../assets/skirmihser-landing-page.png";
                   <h6>Tech Stack</h6>
                 </div>
                 <div class="text-base text-zinc-100 font-poppins">
-                  <p>
-                    Python, React, Django, JavaScript, Tensorflow, TailwindCSS,
-                    PostgreSQL
-                  </p>
+                  <p>PHP, MySQL, HTML, CSS, JavaScript, jQuery, Bootstrap</p>
                 </div>
               </div>
               <div class="content-wrapper mt-2 grid grid-cols-2">
@@ -64,18 +63,17 @@ import skirmisherLanding from "../../assets/skirmihser-landing-page.png";
                 >
                   <h6>Year</h6>
                 </div>
-                <div class="text-base text-zinc-100 font-poppins">2022</div>
+                <div class="text-base text-zinc-100 font-poppins">2019</div>
               </div>
             </div>
             <div
               class="wrapper-description mt-8 md:mt-0 px-0 text-zinc-100 md:px-4"
             >
               <p class="text-justify">
-                SkirmisherAI is a progressive web application that uses AI to
-                screen candidates for a job. The application is built using the
-                cutting edge technologies and has extensive features like live
-                interview, report generation & export, automatic sourcing and
-                many more.
+                An autonomous vehicle company has approached to me to develop a
+                dynamic website where they can showcase their technology and
+                sell products. Therefore, I have developed a website with all
+                the required functionality for the proposed company.
               </p>
             </div>
           </div>
@@ -84,21 +82,30 @@ import skirmisherLanding from "../../assets/skirmihser-landing-page.png";
           <h2
             class="md:text-5xl font-roboto ml-3 text-2xl font-bold uppercase bg-gradient-to-r from-green-500 via-teal-500 to-violet-500 bg-clip-text text-transparent"
           >
-            Screen Shots of the Project
+            Snippets of the Website
           </h2>
           <hr class="w-11/12 mt-1 border-t-2 border-zinc-200 ml-4" />
-          <h4
-            class="text-zinc-200 font-bold text-2xl mt-4 text-center uppercase"
-          >
-            Landing Page
-          </h4>
-          <div class="flex justify-center">
-            <img
-              class="w-11/12 mt-2"
-              src={skirmisherLanding}
-              alt="Skimisher Landing Page"
-            />
-          </div>
+
+          <ScreenSnippet
+            source={"/images/driverless.gif"}
+            name="Landing Pages"
+          />
+          <ScreenSnippet
+            source={"/images/driverless-login.webp"}
+            name="User Profile Screen"
+          />
+          <ScreenSnippet
+            source={"/images/driverless-other.webp"}
+            name="Social Feed"
+          />
+          <ScreenSnippet
+            source={"/images/driverless-tech.webp"}
+            name="Technology Page"
+          />
+          <ScreenSnippet
+            source={"/images/driverless-backend.webp"}
+            name="Setup Screen"
+          />
 
           <hr class="w-full mt-4 border-t-2 border-zinc ml-4" />
           <div class="next-project-wrapper w-full flex justify-between">

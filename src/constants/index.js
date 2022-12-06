@@ -335,11 +335,15 @@ export const projects = [
     title: "Original Paintings",
     tagline: "Website for showcasing and selling Arts .",
     description:
-      "Developed and deployed a website where customers can view and purchase arts from any corner of world. Integrated a custom art ordering system attached with woocommerce",
+      "Developed and deployed a website where customers can view and purchase arts from diverse collection. Integrated a custom artordering system attached with Stripe and Paypal Payment Methods.",
     icon: "art",
     thumbnail: `url("/images/art_site.gif")`,
     stack: ["PHP", "WordPress", "jQuery", "JavaScript", "Mysql", "Bootstrap"],
     link: "project/original-art",
+    image: "/images/art-painting.webp",
+    nextProjectUrl: "/project/portfolio-site",
+    nextProjectTitle: "Portfolio Site",
+    year: "2021",
   },
   {
     id: 71,

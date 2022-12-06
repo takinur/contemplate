@@ -3,7 +3,7 @@ import ProjectLayout from "../../layouts/ProjectLayout.astro";
 import ScreenSnippet from "../../components/ScreenSnippet";
 import { projects } from "../../constants";
 
-// Only Show the zero-two project from the projects array
+// Only Show the selected project from the projects array
 const filteredProject = projects.filter((project) => {
   return project.link === "project/zero-two";
 });

@@ -311,7 +311,8 @@ export const projects = [
     id: 69,
     title: "SkirmisherAI",
     tagline: "AI Powered Talent Screening Application.",
-    description: "Talent Screening Platform With AI Powered Resume Screening",
+    description:
+      "SkirmisherAI is a progressive web application that uses AI to screen candidates for a job. The application is built using thecutting edge technologies and has extensive features like liveinterview, report generation & export, automatic sourcing and many more.",
     icon: "skirmisher",
     thumbnail: `url("/images/skirmisher-thumb.png")`,
     stack: [
@@ -324,6 +325,10 @@ export const projects = [
       "PostgreSQL",
     ],
     link: "project/skirmisherai",
+    image: "/images/skirmihser-landing.png",
+    nextProjectUrl: "/project/original-art",
+    nextProjectTitle: "Original Paintings",
+    year: "2022",
   },
   {
     id: 70,

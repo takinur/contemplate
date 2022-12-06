@@ -10,13 +10,11 @@ const filteredProject = projects.filter((project) => {
 const project = { ...filteredProject[0] };
 ---
 
-<ProjectLayout
-  project={project}
-  title="E-Commerce Project - Takinur Portfolio"
->
-  <ScreenSnippet source="/images/wembley-landing.png" name="Landing Page" />
-  <ScreenSnippet source="/images/wembley-plan.png" name="Plan Visit Page" />
-  <ScreenSnippet source="/images/wembley-booking.png" name="Booking Screen" />
-  <ScreenSnippet source="/images/wembley-events.png" name="Upcoming Events" />
-  <ScreenSnippet source="/images/wembley-venue-hire.png" name="Venue Hire " />
+<ProjectLayout project={project} title="E-Commerce Project - Takinur Portfolio">
+  <ScreenSnippet source="/images/e-commerce-landing.png" name="Landing Page" />
+  <ScreenSnippet source="/images/e-commerce-cart.png" name="Shop Cart" />
+  <ScreenSnippet
+    source="/images/e-commer-slider.png"
+    name=" Purchase Categories "
+  />
 </ProjectLayout>

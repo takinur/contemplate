@@ -463,11 +463,22 @@ export const projects = [
     title: "E-Commerce",
     tagline: "E-Commerce Website Django Framework.",
     description:
-      "Developed an E-commerce website for selling sustainable products.",
+      "Developed an E-commerce website for selling sustainable products to consumers. The system also has features to manage inventory, orders, and customers.",
     icon: "ecommerce",
     thumbnail: `url("/images/ecommerce.gif")`,
-    stack: ["Python", "Django", "React", "JavaScript", "Mysql", "TailwindCSS"],
+    stack: [
+      "Python",
+      "Django",
+      "React",
+      "JavaScript",
+      "PostgreSQL",
+      "TailwindCSS",
+    ],
     link: "project/e-commerce",
+    image: "/images/ecommerce.gif",
+    nextProjectUrl: "/project/derestify",
+    nextProjectTitle: "Derestify",
+    year: "2021",
   },
   {
     id: 79,
@@ -479,5 +490,8 @@ export const projects = [
     thumbnail: `url("/images/serverless.png")`,
     stack: ["Azure", "React", "JavaScript", "HTML", "CSS"],
     link: "project/derestify",
+    image: "/images/serverless.png",
+    nextProjectUrl: "/project/skirmihserai",
+    nextProjectTitle: "Skirmisher AI",
   },
 ];

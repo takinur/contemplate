@@ -373,11 +373,15 @@ export const projects = [
     title: "Ski Beyond ",
     tagline: "Skiing App prototype for iPhone.",
     description:
-      "Developed a high-fidelity prototype for a skiing app for iPhone.",
+      "Created a high fidelity prototype for a Skiing App. The app is designed to help the user to find the best skiing spots in the world. Besides, the app enabled users to tack their activity and share it with their friends",
     icon: "ski",
     thumbnail: `url("/images/ski-beyond.png")`,
     stack: ["Figma", "HTML", "CSS"],
     link: "project/ski-beyond",
+    image: "/images/ski-figma.png",
+    nextProjectUrl: "/project/express-courier",
+    nextProjectTitle: "Express Courier",
+    year: "2022",
   },
   {
     id: 73,

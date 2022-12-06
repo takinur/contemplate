@@ -465,7 +465,7 @@ export const projects = [
     description:
       "Developed an E-commerce website for selling sustainable products to consumers. The system also has features to manage inventory, orders, and customers.",
     icon: "ecommerce",
-    thumbnail: `url("/images/ecommerce.gif")`,
+    thumbnail: `url("/images/e-commerce-landing.png")`,
     stack: [
       "Python",
       "Django",

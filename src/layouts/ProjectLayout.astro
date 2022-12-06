@@ -56,9 +56,18 @@ import "../pages/index.css";
                 >
                   <h6>Tech Stack</h6>
                 </div>
-                <div class="text-base text-zinc-100 font-poppins">
+                <div class="text-sm text-zinc-200 font-poppins">
                   <p>
-                    {project.techStack}
+                    {
+                      project.stack.map((stack: string, index: number) => {
+                        return (
+                          <span>
+                            {stack}
+                            {index !== project.stack.length - 1 ? ", " : ""}
+                          </span>
+                        );
+                      })
+                    }
                   </p>
                 </div>
               </div>
@@ -86,7 +95,7 @@ import "../pages/index.css";
           <h2
             class="md:text-5xl font-roboto ml-3 text-2xl font-bold uppercase bg-gradient-to-r from-green-500 via-teal-500 to-violet-500 bg-clip-text text-transparent"
           >
-            Screenshots of the Project
+            Glimpse of the Project
           </h2>
           <hr class="w-11/12 mt-1 border-t-2 border-zinc-200 ml-4" />
           <!-- Screenshot Placeholder -->

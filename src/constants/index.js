@@ -314,7 +314,7 @@ export const projects = [
     description:
       "SkirmisherAI is a progressive web application that uses AI to screen candidates for a job. The application is built using thecutting edge technologies and has extensive features like liveinterview, report generation & export, automatic sourcing and many more.",
     icon: "skirmisher",
-    thumbnail: `url("/images/skirmisher-thumb.png")`,
+    thumbnail: `url("/images/sk_thumb.png")`,
     stack: [
       "Python",
       "Django",

@@ -1,7 +1,6 @@
 ---
 import termsPage from "../../assets/skirmisher-terms.png";
 import ScreenSnippet from "../../components/ScreenSnippet";
-import dashboard from "../../assets/skirmisher-dashboard.png";
 import { projects } from "../../constants";
 import ProjectLayout from "../../layouts/ProjectLayout.astro";
 
@@ -17,9 +16,34 @@ const project = { ...filteredProject[0] };
   title="Talent Screening Project - Takinur Portfolio"
 >
   <ScreenSnippet
+    source="/images/skirmisher-job-find.png"
+    name="Find Work Screen"
+  />
+  <ScreenSnippet
     source="/images/skirmihser-landing.png"
     name={"Landing Page"}
   />
-  <ScreenSnippet source={dashboard} name={"Dashboard"} />
+  <ScreenSnippet source="/images/skirmisher-dashboard.png" name="Dashboard" />
+  <ScreenSnippet
+    source="/images/skirmisher-report.png"
+    name="Report Generation"
+  />
+
+  <ScreenSnippet
+    source="/images/skirmisher-manage-job.png"
+    name="Manage Vacancies"
+  />
+
+  <ScreenSnippet
+    source="/images/skirmisher-suitability.png"
+    name="Applicant Suitability"
+  />
+  <ScreenSnippet
+    source="/images/skirmisher-community.png"
+    name="Community Page"
+  />
+
+  <ScreenSnippet source="/images/skirmisher-contact.png" name="Contact Page" />
+
   <ScreenSnippet source={termsPage} name={" Terms and Conditions"} />
 </ProjectLayout>

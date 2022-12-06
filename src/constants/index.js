@@ -377,7 +377,7 @@ export const projects = [
       "Developed a website for a startup company that is working on autonomous vehicles.",
     icon: "driverless",
     thumbnail: `url("/images/driverless-thumb.webp")`,
-    stack: ["PHP", "JavaScript", "TailwindCSS", "HTML", "CSS"],
+    stack: ["PHP", "JavaScript", "Bootstrap", "HTML", "CSS"],
     link: "project/driverless",
   },
   {

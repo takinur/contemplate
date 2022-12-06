@@ -388,11 +388,15 @@ export const projects = [
     title: "Express Courier",
     tagline: "SPA E-Courier Application with RestAPI.",
     description:
-      "Developed a web application for a courier company to manage their orders and payments.",
+      "Developed a courier application as per clients requirements. The application also includes tracking or orders and parcels. The app was later deployed at digital ocean hosting service with technologies like Nginx, PHP, MySQL, and Laravel.",
     icon: "courier",
     thumbnail: `url("/images/express-courier.webp")`,
     stack: ["PHP", "Laravel", "Vue", "JavaScript", "Mysql", "TailwindCSS"],
     link: "project/express-courier",
+    image: "/images/courier-home.webp",
+    nextProjectUrl: "/project/driverless",
+    nextProjectTitle: "Driverless Ca",
+    year: "2020",
   },
   {
     id: 74,

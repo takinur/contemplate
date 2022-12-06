@@ -1,16 +1,7 @@
 ---
 export interface Props {
   title: string;
-  project: {
-    title: string;
-    tagline: string;
-    techStack: string;
-    year: string;
-    description: string;
-    image: string;
-    nextProjectUrl: string;
-    nextProjectTitle: string;
-  };
+  project: any;
 }
 
 const { title, project } = Astro.props;

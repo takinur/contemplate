@@ -1,20 +1,18 @@
 ---
 import ProjectLayout from "../../layouts/ProjectLayout.astro";
-//Main Project Details that will be passed to the ProjectLayout
-const ProjectDetails = {
-  title: "Zero Two",
-  tagline: "Freelance Platform with Laravel and JavaScript",
-  year: "2021",
-  description:
-    "Zero Two is a reversed job platform that connects the job seekers with the employers. Developed a freelance platform where freelancers can post their services and clients can hire them.",
-  techStack: "JavaScript, Vue, PHP, Laravel, TailwindCSS, MySql",
-  image: "/images/skirmisher-thumb.png",
-  nextProjectUrl: "/project/buying-home-in-california",
-  nextProjectTitle: "Buying Home in California",
-};
+import ScreenSnippet from "../../components/ScreenSnippet";
+import { projects } from "../../constants";
+
+// Only Show the zero-two project from the projects array
+const filteredProject = projects.filter((project) => {
+  return project.link === "project/zero-two";
+});
+const project = { ...filteredProject[0] };
 ---
 
 <ProjectLayout
-  project={ProjectDetails}
+  project={project}
   title="Reversed Job Platform - Takinur Portfolio"
-/>
+>
+  <ScreenSnippet source="/images/zero-two.gif" name="Main Screen" />
+</ProjectLayout>

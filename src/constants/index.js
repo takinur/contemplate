@@ -390,6 +390,10 @@ export const projects = [
     thumbnail: `url("/images/zero-two.gif")`,
     stack: ["PHP", "Laravel", "Vue", "JavaScript", "Mysql", "TailwindCSS"],
     link: "project/zero-two",
+    image: "/images/skirmisher-thumb.png",
+    nextProjectUrl: "/project/buying-home-in-california",
+    nextProjectTitle: "Buying Home in California",
+    year: "2021",
   },
   {
     id: 76,

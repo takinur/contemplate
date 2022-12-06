@@ -38,7 +38,7 @@ import {
   SiPostgresql,
   SiOracle,
   SiMongodb,
-} from "react-icons/si";
+} from "react-icons/si/index.js";
 
 export const SkillIcon = ({ icon, name }) => {
   const createIcon =

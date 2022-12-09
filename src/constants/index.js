@@ -420,7 +420,7 @@ export const projects = [
     description:
       "Developed a freelance platform where freelancers can post their services and clients can hire them.",
     icon: "zero-two",
-    thumbnail: `url("/images/zero-two.gif")`,
+    thumbnail: `url("/images/zero-two-home.png")`,
     stack: ["PHP", "Laravel", "Vue", "JavaScript", "Mysql", "TailwindCSS"],
     link: "project/zero-two",
     image: "/images/zero-two-home.png",

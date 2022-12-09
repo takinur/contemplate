@@ -167,7 +167,7 @@ const Projects = () => {
               </div>
               <div className="info">
                 <div className="main">{project.title} </div>
-                <div className="my-1 text-gray-500 capitalize dark:text-gray-300 group-hover:text-gray-300">
+                <div className="my-1 text-gray-300 group-hover:text-gray-300">
                   <div className="flex flex-row gap-4">
                     {project.stack.map((tech, index) => (
                       <StackIcon key={index} icon={tech} />

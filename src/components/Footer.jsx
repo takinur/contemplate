@@ -14,7 +14,7 @@ const Footer = () => {
               <div className="grid w-full place-items-center md:w-1/3">
                 <p className="text-white">
                   Interested in working together? We should queue up a chat.
-                  I’ll buy the coffee. Get in touch by Tweet.
+                  I’ll buy the coffee. Get in touch by Twitter.
                 </p>
               </div>
               <div className="w-full md:w-1/3 grid place-items-center">
@@ -24,7 +24,7 @@ const Footer = () => {
                     target="blank"
                     className="flex py-3 px-6 text-white rounded-full border-2 border-[#7510F7] shadow-lg md:inline-flex hover:bg-[#7510F7]"
                   >
-                    Twitter{" "}
+                    Tweet{" "}
                     <svg
                       className="w-4 h-4 ml-2 mt-1 fill-current"
                       role="img"

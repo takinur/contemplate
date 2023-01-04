@@ -136,7 +136,7 @@ const Footer = () => {
                 HandCrafted by Me &copy;{new Date().getFullYear()}, Deployed to
                 AWS by
                 <a
-                  href="https://vercel.com/?utm_source=takinur-potfolio"
+                  href="https://vercel.com/?utm_source=takinur-portfolio"
                   target="blank"
                   className="text-teal-400 ml-1 hover:text-teal-500"
                 >

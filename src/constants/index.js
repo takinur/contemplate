@@ -1,4 +1,4 @@
-import BiovaasLogo from "../assets/biovaas-logo.png";
+import CyberLogo from "../assets/CyberLogo.jpeg";
 import Logo from "../assets/logo.png";
 
 export const navLinks = [
@@ -217,24 +217,24 @@ export const skills = [
 
 export const experiences = [
   {
-    organisation: "Freelance Software Engineer ",
-    logo: Logo,
-    link: "#",
+    organisation: "Cyberdyne Technology Ltd.",
+    logo: CyberLogo,
+    link: "https://cyberdynetechnologyltd.com/",
     positions: [
       {
-        title: "Full-Stack Web Developer",
-        duration: "From 2021 - Present",
+        title: "Web Developer",
+        duration: "August 2022 - Present",
         content: [
           {
             text: "Modified the existing codebase of a web application to add new features and improve the user experience.",
             link: "",
           },
           {
-            text: "Developed a REST API to handle the requests from the web application.",
+            text: "Developed  REST API's to handle the requests from the web application.",
             link: "",
           },
           {
-            text: "Worked on various well-known CMS as per client requirements including WordPress, Shopify, Opencart et cetra. ",
+            text: "Worked on various well-known CMS as per client requirements including WordPress, Shopify, Opencart, Bigcommerce et cetra. ",
             link: "",
           },
           {
@@ -249,47 +249,12 @@ export const experiences = [
             text: "Designed and created UI components that are reusable and scalable.",
             link: "",
           },
-        ],
-      },
-      {
-        title: "Cloud Engineer ",
-        duration: "",
-        content: [
-          {
-            text: "Developed a serverless application using AWS Lambda and AWS API Gateway to handle the requests from the web application.",
-            link: "",
-          },
-          {
-            text: "Configured servers and databases with modern infrastructure for hosting web applications using Nginx and Apache.",
-            link: "",
-          },
-          {
-            text: "Deployed diverse web application to several cloud platforms such as AWS, Azure, and Digital Ocean.",
-            link: "",
-          },
-        ],
-      },
-    ],
-  },
-  {
-    organisation: "Biovaas Tech Aid",
-    logo: BiovaasLogo,
-    link: "https://www.biovaas.com/",
-    positions: [
-      {
-        title: "Web Developer",
-        duration: "Jan 2020 - June 2021",
-        content: [
-          {
-            text: "Developed an E-commerce website for selling technological products.",
-            link: "",
-          },
           {
             text: "Optimized the website for better SEO and performance.",
             link: "",
           },
           {
-            text: "Built and maintained the website using PHP, HTML, CSS, and JavaScript.",
+            text: "Built and maintained the website using PHP, HTML, CSS, and JavaScript, TypeScript.",
             link: "",
           },
           {
@@ -298,6 +263,59 @@ export const experiences = [
           },
           {
             text: "Worked with the team by filling reports, attending meetings, and giving presentations.",
+            link: "",
+          },
+        ],
+      },
+    ],
+  },
+  {
+    organisation: "Freelance Software Engineer ",
+    logo: Logo,
+    link: "#",
+    positions: [
+      {
+        title: "Full-Stack Web Developer",
+        duration: "From 2021 - July 2022",
+        content: [
+          {
+            text: "Developed serverless applications using AWS Lambda and AWS API Gateway to handle the requests from the web application.",
+            link: "",
+          },
+          {
+            text: "Configured servers and databases with modern infrastructure for hosting web applications using Nginx and Apache.",
+            link: "",
+          },
+          {
+            text: "Deployed progressive web application to several cloud platforms such as AWS, Azure, and Digital Ocean.",
+            link: "",
+          },
+          {
+            text: "Developed an E-commerce website for selling technological products.",
+            link: "",
+          },
+          {
+            text: "Modified the existing codebase of a web application to add new features and improve the user experience.",
+            link: "",
+          },
+          {
+            text: "Developed  REST API's to handle the requests from the web application.",
+            link: "",
+          },
+          {
+            text: "Worked on various well-known CMS as per client requirements including WordPress, Shopify, Opencart, Bigcommerce et cetra. ",
+            link: "",
+          },
+          {
+            text: "Implemented mobile-first design for the web application.",
+            link: "",
+          },
+          {
+            text: "Worked closely with the client to understand the requirements and deliver the project on time.",
+            link: "",
+          },
+          {
+            text: "Designed and created UI components that are reusable and scalable.",
             link: "",
           },
         ],
@@ -329,6 +347,9 @@ export const projects = [
     nextProjectUrl: "/project/original-art",
     nextProjectTitle: "Original Paintings",
     year: "2022",
+  },
+  {
+    
   },
   {
     id: 70,

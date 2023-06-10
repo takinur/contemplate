@@ -132,7 +132,7 @@ const Projects = () => {
       <h1 className="mb-4 flex-1 font-poppins font-semibold ss:text-[55px] text-[45px] text-white ss:leading-[80px] leading-[80px]">
         Recent Works
       </h1>
-      <div className="options h-full md:h-auto max-w-7xl overflow-hidden w-full items-stretch  md:flex-row md:flex grid grid-flow-cols">
+      <div className="options h-full md:h-auto -md:flex-row-md:flex overflow-hidden w-full items-center justify-center grid grid-cols-3">
         {projects.map((project) => (
           <div
             key={project.id}
@@ -150,7 +150,7 @@ const Projects = () => {
                   viewBox="0 0 24 24"
                   strokeWidth={1.5}
                   stroke="currentColor"
-                  className="w-8 h-8 text-indigo-500 hover:text-indigo-700"
+                  className="w-8 h-8 text-indigo-500 hover:text-indigo-700 "
                 >
                   <path
                     strokeLinecap="round"

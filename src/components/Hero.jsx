@@ -38,7 +38,7 @@ const Hero = () => {
           </span>
         </h1>
         <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-          Software Engineer, Web Developer, cloud Engineer and a passionate
+          Software Engineer, Web Developer and a passionate
           learner with a strong interest in building scalable and efficient
           software solutions.
         </p>

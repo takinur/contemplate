@@ -1,0 +1,37 @@
+---
+import ScreenSnippet from "../../components/ScreenSnippet";
+import { projects } from "../../constants";
+import ProjectLayout from "../../layouts/ProjectLayout.astro";
+
+// Only Show the selected project from the projects array
+const filteredProject = projects.filter((project) => {
+  return project.link === "project/f2a-partners";
+});
+const project = { ...filteredProject[0] };
+---
+
+<ProjectLayout
+  project={project}
+  title="Talent Screening Project - Takinur Portfolio"
+>
+  <ScreenSnippet
+    source="/images/f2a_thumb.png"
+    name="Landing Page"
+  />
+  <ScreenSnippet
+    source="/images/f2a_contact.png"
+    name={"Contact Page"}
+  />
+  <ScreenSnippet source="/images/f2a_main.png" name="Main Pages" />
+  <ScreenSnippet
+    source="/images/f2a_gallery.png"
+    name="Project Gallery"
+  />
+
+  <ScreenSnippet
+    source="/images/f2a_project_detail.png"
+    name="Project Showcase"
+  />
+
+  
+</ProjectLayout>

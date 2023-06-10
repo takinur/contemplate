@@ -108,6 +108,7 @@ export const StackIcon = ({ icon }) => {
       mongodb: <SiMongodb />,
       astro: <SiArchlinux />,
       wordpress: <SiWordpress />,
+      nextjs: <SiNextdotjs />,
     }[icon.toLowerCase()] || null;
 
   return (

@@ -344,12 +344,24 @@ export const projects = [
     ],
     link: "project/skirmisherai",
     image: "/images/skirmihser-landing.png",
-    nextProjectUrl: "/project/original-art",
-    nextProjectTitle: "Original Paintings",
+    nextProjectUrl: "/project/f2a-partners",
+    nextProjectTitle: "F2A Partners",
     year: "2022",
   },
   {
-    
+    id: 68,
+    title: "F2A Partners",
+    tagline: "Website for a Architect Company.",
+    description:
+      "Developed a website for a Architect company where they can showcase their work and services. The website is built with Next.Js and React. The website also focuses on user experience and accessibility.",
+    icon: "f2a",
+    thumbnail: `url("/images/f2a_thumb.png")`,
+    stack: ["NextJs", "React", "TypeScript", "TailwindCSS", "HTML", "CSS"],
+    link: "project/f2a-partners",
+    image: "/images/f2a_thumb.png",
+    nextProjectUrl: "/project/original-art",
+    nextProjectTitle: "Original Paintings",
+    year: "2023",
   },
   {
     id: 70,

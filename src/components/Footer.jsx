@@ -40,14 +40,14 @@ const Footer = () => {
           </div>
         </div>
       </section>
-      <footer className="bg-gray-200 ">
-        <div className="bg-gray-200">
-          <div className="w-full mx-auto font-semibold text-gray-900 py-10 dark:bg-slate-800">
+      <footer className="bg-slate-800 ">
+        <div className="w-full">
+          <div className="w-full mx-auto font-semibold text-zinc-100 py-10 bg-slate-800">
             <div className="text-center">
               <div className="footer-logo w-24 mx-auto">
                 <img src={logo} alt="Logo of Takinur" className="bg-cover" />
               </div>
-              <p className="font-semibold mt-5 text-xl md:text-2xl dark:text-zinc-100">
+              <p className="font-semibold mt-5 text-xl md:text-2xl text-zinc-100">
                 Living, learning, & leveling up one day at a time.
               </p>
             </div>
@@ -131,7 +131,7 @@ const Footer = () => {
                 </a>
               </div>
             </div>
-            <div className="mt-12 md:justify-center items-center text-center text-sm text-gray-400">
+            <div className="mt-12 justify-center items-center text-center text-sm text-gray-200">
               <p className="mt-8 md:mt-0">
                 HandCrafted by Me &copy;{new Date().getFullYear()}, Deployed to
                 AWS by

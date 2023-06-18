@@ -161,7 +161,11 @@ const Projects = () => {
               </a>
             </div>
 
-            <div className="shadow"></div>
+            <div
+              className={`shadow ${
+                project.id === active ? "active" : "hidden"
+              } bg-gray-100 bg-opacity-20 bg-clip-padding px-6 py-4 backdrop-blur-sm backdrop-filter`}
+            ></div>
             <div className="label">
               <div className="icon z-20">
                 <ProjectIcon icon={project.icon} />

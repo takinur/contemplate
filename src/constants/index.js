@@ -23,7 +23,7 @@ export const navLinks = [
 
 export const skills = [
   {
-    title: "Programming Languages",
+    title: "Languages",
     items: [
       {
         id: "pl-1",
@@ -164,7 +164,7 @@ export const skills = [
       {
         id: "t-7",
         icon: "testing",
-        name: "Automatic Testing",
+        name: "Testing",
       },
       {
         id: "t-8",
@@ -174,7 +174,7 @@ export const skills = [
       {
         id: "t-9",
         icon: "serverless",
-        name: "Serverless",
+        name: "Edge Function",
       },
     ],
   },

@@ -3,6 +3,7 @@ import { useLottie } from "lottie-react";
 import booksReading from "../assets/books-reading.json";
 import UOG from "../assets/uog-logo.png";
 import { motion } from "framer-motion";
+import west from "../assets/westminster-logo.png";
 
 const Education = () => {
   const lotteOptions = {
@@ -32,6 +33,32 @@ const Education = () => {
 
         <div className={`${layout.sectionInfo} flex-col`}>
           <div className={`flex flex-row p-6 rounded-[20px] mb-6 feature-card`}>
+            <div className="w-16 h-16 rounded-full flex items-center justify-center bg-[#0ca79e] overflow-hidden">
+              <img
+                src={west}
+                alt="Westminster Logo"
+                className="w-11/12 h-11/12 object-contain"
+              />
+            </div>
+
+            <div className="flex-1 flex flex-col ml-4">
+              <h4 className="font-poppins font-semibold text-white text-[20px] leading-[30px] mb-1 text-gradient">
+                University of Westminster, Cavendish, London
+              </h4>
+              <p className="font-poppins font-normal text-white text-[16px] leading-[30px] mb-1 ">
+                MSc Computer Science (Data Science)
+              </p>
+              <p className="font-poppins font-normal text-dimWhite text-[14px] leading-[30px] mb-1">
+                Started in 2023 and expected to graduate in 2024
+              </p>
+              <p className="font-poppins font-normal text-dimWhite text-[16px] leading-[30px] mb-1">
+                - Relevent Courses : Data Mining and Machine Learning, Data
+                Science, Data Visualisation, Big Data, Data Repositories and
+                Data Warehousing, Data Science Project
+              </p>
+            </div>
+          </div>
+          <div className={`flex flex-row p-6 rounded-[20px] mb-6 feature-card`}>
             <div
               className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-zinc-100`}
             >
@@ -52,8 +79,8 @@ const Education = () => {
                 Started in 2019 and graduated in 2022
               </p>
               <p className="font-poppins font-normal text-dimWhite text-[16px] leading-[30px] mb-1">
-                - Relevent Courseworks: Dynamic Web Development, Operating
-                Systems, Computer Networks, Database Systems, Software Project
+                - Relevent Courses: Dynamic Web Development, Operating Systems,
+                Computer Networks, Database Systems, Software Project
                 Management, Software development Technique, Software Design and
                 Development, Computing Project with AI and Machine Learning
               </p>

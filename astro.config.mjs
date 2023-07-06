@@ -10,14 +10,14 @@ import react from "@astrojs/react";
 import sitemap from "@astrojs/sitemap";
 
 // https://astro.build/config
-import vercel from "@astrojs/vercel/serverless";
+// import vercel from "@astrojs/vercel/serverless";
 
 // https://astro.build/config
 export default defineConfig({
   site: "https://www.takinur.com",
   integrations: [tailwind(), react(), sitemap()],
-  output: "server",
-  adapter: vercel({
-    analytics: true,
-  }),
+  // output: "server",
+  // adapter: vercel({
+  //   analytics: true,
+  // }),
 });

@@ -184,7 +184,7 @@ const SkillsAndExperience = () => {
         {/* Skills */}
         <motion.div className={`ml-2 mb-6 ${layout.sectionInfo}`}>
           {skills.map((skill, index) => (
-            <SkillCard index={index} {...skill} />
+            <SkillCard key={index} index={index} {...skill} />
           ))}
         </motion.div>
 

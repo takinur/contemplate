@@ -32,7 +32,7 @@ const Education = () => {
         </div>
 
         <div className={`${layout.sectionInfo} flex-col`}>
-          <div className={`flex flex-row p-6 rounded-[20px] mb-6 feature-card`}>
+          {/* <div className={`flex flex-row p-6 rounded-[20px] mb-6 feature-card`}>
             <div className="w-16 h-16 rounded-full flex items-center justify-center bg-[#0ca79e] overflow-hidden">
               <img
                 src={west}
@@ -57,7 +57,7 @@ const Education = () => {
                 Data Warehousing, Data Science Project
               </p>
             </div>
-          </div>
+          </div> */}
           <div className={`flex flex-row p-6 rounded-[20px] mb-6 feature-card`}>
             <div
               className={`w-[64px] h-[64px] rounded-full ${styles.flexCenter} bg-zinc-100`}
